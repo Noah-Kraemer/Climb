@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F5D5AD02161FB3B001D8A07 /* moai.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F5D5ACF2161FB3B001D8A07 /* moai.jpg */; };
+		4F5D5AD22161FB72001D8A07 /* candlestick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F5D5AD12161FB72001D8A07 /* candlestick.jpg */; };
+		4F5D5AD72162010A001D8A07 /* ClimbModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5D5AD62162010A001D8A07 /* ClimbModel.swift */; };
+		4F5D5ADE2164E4B9001D8A07 /* ClimbPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5D5ADD2164E4B9001D8A07 /* ClimbPageViewController.swift */; };
+		4F5D5AE02164EA9D001D8A07 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5D5ADF2164EA9D001D8A07 /* RootViewController.swift */; };
 		4FCC1F8821605CC6001B63ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1F8721605CC6001B63ED /* AppDelegate.swift */; };
-		4FCC1F8A21605CC6001B63ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1F8921605CC6001B63ED /* ViewController.swift */; };
+		4FCC1F8A21605CC6001B63ED /* ClimbPageContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1F8921605CC6001B63ED /* ClimbPageContentController.swift */; };
 		4FCC1F8D21605CC6001B63ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1F8B21605CC6001B63ED /* Main.storyboard */; };
-		4FCC1F9021605CC6001B63ED /* Climb.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1F8E21605CC6001B63ED /* Climb.xcdatamodeld */; };
+		4FCC1F9021605CC6001B63ED /* Climb_Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1F8E21605CC6001B63ED /* Climb_Data.xcdatamodeld */; };
 		4FCC1F9221605CC8001B63ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1F9121605CC8001B63ED /* Assets.xcassets */; };
 		4FCC1F9521605CC8001B63ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1F9321605CC8001B63ED /* LaunchScreen.storyboard */; };
 		4FCC1FA021605CC8001B63ED /* ClimbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1F9F21605CC8001B63ED /* ClimbTests.swift */; };
 		4FCC1FAB21605CC8001B63ED /* ClimbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1FAA21605CC8001B63ED /* ClimbUITests.swift */; };
+		4FCC1FBC2160685E001B63ED /* sport.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBB2160685E001B63ED /* sport.png */; };
+		4FCC1FBE2160701C001B63ED /* tote.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBD2160701C001B63ED /* tote.jpg */; };
+		4FCC1FC0216072C8001B63ED /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBF216072C8001B63ED /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F5D5ACF2161FB3B001D8A07 /* moai.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moai.jpg; sourceTree = "<group>"; };
+		4F5D5AD12161FB72001D8A07 /* candlestick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = candlestick.jpg; sourceTree = "<group>"; };
+		4F5D5AD62162010A001D8A07 /* ClimbModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbModel.swift; sourceTree = "<group>"; };
+		4F5D5ADD2164E4B9001D8A07 /* ClimbPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbPageViewController.swift; sourceTree = "<group>"; };
+		4F5D5ADF2164EA9D001D8A07 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		4FCC1F8421605CC6001B63ED /* Climb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Climb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCC1F8721605CC6001B63ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4FCC1F8921605CC6001B63ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FCC1F8921605CC6001B63ED /* ClimbPageContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbPageContentController.swift; sourceTree = "<group>"; };
 		4FCC1F8C21605CC6001B63ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FCC1F8F21605CC6001B63ED /* Climb.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Climb.xcdatamodel; sourceTree = "<group>"; };
 		4FCC1F9121605CC8001B63ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +62,9 @@
 		4FCC1FA621605CC8001B63ED /* ClimbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCC1FAA21605CC8001B63ED /* ClimbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbUITests.swift; sourceTree = "<group>"; };
 		4FCC1FAC21605CC8001B63ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FCC1FBB2160685E001B63ED /* sport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sport.png; sourceTree = "<group>"; };
+		4FCC1FBD2160701C001B63ED /* tote.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tote.jpg; sourceTree = "<group>"; };
+		4FCC1FBF216072C8001B63ED /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,9 +92,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F5D5ACB2161DD06001D8A07 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4FCC1F8921605CC6001B63ED /* ClimbPageContentController.swift */,
+				4F5D5ADD2164E4B9001D8A07 /* ClimbPageViewController.swift */,
+				4F5D5ADF2164EA9D001D8A07 /* RootViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4F5D5ACC2161DD14001D8A07 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		4F5D5ACD2161DD1C001D8A07 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4FCC1F8721605CC6001B63ED /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4F5D5ACE2161DD47001D8A07 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4FCC1F8B21605CC6001B63ED /* Main.storyboard */,
+				4FCC1F9321605CC8001B63ED /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4F5D5AD32161FF6A001D8A07 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4FCC1FBF216072C8001B63ED /* GradientView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4F5D5AD821620111001D8A07 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4F5D5AD62162010A001D8A07 /* ClimbModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		4FCC1F7B21605CC6001B63ED = {
 			isa = PBXGroup;
 			children = (
+				4FCC1FB821605FAF001B63ED /* Assets */,
 				4FCC1F8621605CC6001B63ED /* Climb */,
 				4FCC1F9E21605CC8001B63ED /* ClimbTests */,
 				4FCC1FA921605CC8001B63ED /* ClimbUITests */,
@@ -99,13 +166,13 @@
 		4FCC1F8621605CC6001B63ED /* Climb */ = {
 			isa = PBXGroup;
 			children = (
-				4FCC1F8721605CC6001B63ED /* AppDelegate.swift */,
-				4FCC1F8921605CC6001B63ED /* ViewController.swift */,
-				4FCC1F8B21605CC6001B63ED /* Main.storyboard */,
-				4FCC1F9121605CC8001B63ED /* Assets.xcassets */,
-				4FCC1F9321605CC8001B63ED /* LaunchScreen.storyboard */,
+				4F5D5ACE2161DD47001D8A07 /* Storyboards */,
+				4F5D5ACB2161DD06001D8A07 /* ViewControllers */,
+				4F5D5AD32161FF6A001D8A07 /* Views */,
+				4F5D5ACC2161DD14001D8A07 /* Constants */,
+				4F5D5AD821620111001D8A07 /* Models */,
+				4F5D5ACD2161DD1C001D8A07 /* Application */,
 				4FCC1F9621605CC8001B63ED /* Info.plist */,
-				4FCC1F8E21605CC6001B63ED /* Climb.xcdatamodeld */,
 			);
 			path = Climb;
 			sourceTree = "<group>";
@@ -126,6 +193,19 @@
 				4FCC1FAC21605CC8001B63ED /* Info.plist */,
 			);
 			path = ClimbUITests;
+			sourceTree = "<group>";
+		};
+		4FCC1FB821605FAF001B63ED /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4F5D5AD12161FB72001D8A07 /* candlestick.jpg */,
+				4F5D5ACF2161FB3B001D8A07 /* moai.jpg */,
+				4FCC1F8E21605CC6001B63ED /* Climb_Data.xcdatamodeld */,
+				4FCC1F9121605CC8001B63ED /* Assets.xcassets */,
+				4FCC1FBD2160701C001B63ED /* tote.jpg */,
+				4FCC1FBB2160685E001B63ED /* sport.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +270,9 @@
 		4FCC1F7C21605CC6001B63ED /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					ClimbsPageViewController,
+				);
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Noah Kraemer";
@@ -233,8 +316,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FCC1F9521605CC8001B63ED /* LaunchScreen.storyboard in Resources */,
+				4F5D5AD02161FB3B001D8A07 /* moai.jpg in Resources */,
+				4FCC1FBE2160701C001B63ED /* tote.jpg in Resources */,
 				4FCC1F9221605CC8001B63ED /* Assets.xcassets in Resources */,
 				4FCC1F8D21605CC6001B63ED /* Main.storyboard in Resources */,
+				4FCC1FBC2160685E001B63ED /* sport.png in Resources */,
+				4F5D5AD22161FB72001D8A07 /* candlestick.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +346,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FCC1F9021605CC6001B63ED /* Climb.xcdatamodeld in Sources */,
-				4FCC1F8A21605CC6001B63ED /* ViewController.swift in Sources */,
+				4FCC1F9021605CC6001B63ED /* Climb_Data.xcdatamodeld in Sources */,
+				4F5D5AD72162010A001D8A07 /* ClimbModel.swift in Sources */,
+				4FCC1F8A21605CC6001B63ED /* ClimbPageContentController.swift in Sources */,
+				4F5D5AE02164EA9D001D8A07 /* RootViewController.swift in Sources */,
+				4FCC1FC0216072C8001B63ED /* GradientView.swift in Sources */,
+				4F5D5ADE2164E4B9001D8A07 /* ClimbPageViewController.swift in Sources */,
 				4FCC1F8821605CC6001B63ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,13 +681,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		4FCC1F8E21605CC6001B63ED /* Climb.xcdatamodeld */ = {
+		4FCC1F8E21605CC6001B63ED /* Climb_Data.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				4FCC1F8F21605CC6001B63ED /* Climb.xcdatamodel */,
 			);
 			currentVersion = 4FCC1F8F21605CC6001B63ED /* Climb.xcdatamodel */;
-			path = Climb.xcdatamodeld;
+			path = Climb_Data.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
