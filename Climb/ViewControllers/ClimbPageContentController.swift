@@ -15,6 +15,7 @@ class ClimbPageContentController: UIViewController {
     @IBOutlet weak var infoView: UIView!
     
     @IBOutlet weak var climbImageView: UIImageView!
+    @IBOutlet weak var overlayImageView: UIImageView!
     @IBOutlet weak var styleImageView: UIImageView!
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -35,6 +36,7 @@ class ClimbPageContentController: UIViewController {
         super.viewDidLoad()
         
         climbImageView.image = UIImage.init(named: climbImageName!)
+        overlayImageView.image = UIImage.init(named: "overlay_" + climbImageName!)
         styleImageView.image = UIImage.init(named: styleImageName!)
         nameLabel.text = name
         gradeLabel.text = grade
