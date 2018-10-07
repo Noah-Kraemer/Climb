@@ -14,6 +14,9 @@
 		4F5D5AE02164EA9D001D8A07 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5D5ADF2164EA9D001D8A07 /* RootViewController.swift */; };
 		4F5D5AE22164FB15001D8A07 /* overlay_tote.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F5D5AE12164FB15001D8A07 /* overlay_tote.jpg */; };
 		4F5D5AE42164FEA0001D8A07 /* icon_pitches.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F5D5AE32164FEA0001D8A07 /* icon_pitches.png */; };
+		4F66DF31216980A50089AFE4 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DF30216980A50089AFE4 /* SplashScreenViewController.swift */; };
+		4F66DF332169821D0089AFE4 /* AnimatedLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DF322169821D0089AFE4 /* AnimatedLogoView.swift */; };
+		4F66DF35216986B50089AFE4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DF34216986B50089AFE4 /* Colors.swift */; };
 		4FCC1F8821605CC6001B63ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1F8721605CC6001B63ED /* AppDelegate.swift */; };
 		4FCC1F8A21605CC6001B63ED /* ClimbPageContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1F8921605CC6001B63ED /* ClimbPageContentController.swift */; };
 		4FCC1F8D21605CC6001B63ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1F8B21605CC6001B63ED /* Main.storyboard */; };
@@ -25,6 +28,8 @@
 		4FCC1FBC2160685E001B63ED /* Sport.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBB2160685E001B63ED /* Sport.png */; };
 		4FCC1FBE2160701C001B63ED /* tote.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBD2160701C001B63ED /* tote.jpg */; };
 		4FCC1FC0216072C8001B63ED /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBF216072C8001B63ED /* GradientView.swift */; };
+		4FFC43E72167ACD5005D3384 /* AreaPageContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFC43E62167ACD5005D3384 /* AreaPageContentController.swift */; };
+		4FFC43E92167AE6B005D3384 /* celestial.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FFC43E82167AE6B005D3384 /* celestial.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,9 @@
 		4F5D5ADF2164EA9D001D8A07 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		4F5D5AE12164FB15001D8A07 /* overlay_tote.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = overlay_tote.jpg; sourceTree = "<group>"; };
 		4F5D5AE32164FEA0001D8A07 /* icon_pitches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pitches.png; sourceTree = "<group>"; };
+		4F66DF30216980A50089AFE4 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		4F66DF322169821D0089AFE4 /* AnimatedLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedLogoView.swift; sourceTree = "<group>"; };
+		4F66DF34216986B50089AFE4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		4FCC1F8421605CC6001B63ED /* Climb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Climb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCC1F8721605CC6001B63ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FCC1F8921605CC6001B63ED /* ClimbPageContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbPageContentController.swift; sourceTree = "<group>"; };
@@ -69,6 +77,8 @@
 		4FCC1FBB2160685E001B63ED /* Sport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sport.png; sourceTree = "<group>"; };
 		4FCC1FBD2160701C001B63ED /* tote.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tote.jpg; sourceTree = "<group>"; };
 		4FCC1FBF216072C8001B63ED /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		4FFC43E62167ACD5005D3384 /* AreaPageContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaPageContentController.swift; sourceTree = "<group>"; };
+		4FFC43E82167AE6B005D3384 /* celestial.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = celestial.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +112,8 @@
 				4FCC1F8921605CC6001B63ED /* ClimbPageContentController.swift */,
 				4F5D5ADD2164E4B9001D8A07 /* ClimbPageViewController.swift */,
 				4F5D5ADF2164EA9D001D8A07 /* RootViewController.swift */,
+				4FFC43E62167ACD5005D3384 /* AreaPageContentController.swift */,
+				4F66DF30216980A50089AFE4 /* SplashScreenViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -109,6 +121,7 @@
 		4F5D5ACC2161DD14001D8A07 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				4F66DF34216986B50089AFE4 /* Colors.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -134,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				4FCC1FBF216072C8001B63ED /* GradientView.swift */,
+				4F66DF322169821D0089AFE4 /* AnimatedLogoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,6 +216,7 @@
 		4FCC1FB821605FAF001B63ED /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				4FFC43E82167AE6B005D3384 /* celestial.jpg */,
 				4F5D5AE32164FEA0001D8A07 /* icon_pitches.png */,
 				4F5D5AE12164FB15001D8A07 /* overlay_tote.jpg */,
 				4F5D5AD12161FB72001D8A07 /* candlestick.jpg */,
@@ -285,13 +300,16 @@
 				TargetAttributes = {
 					4FCC1F8321605CC6001B63ED = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					4FCC1F9A21605CC8001B63ED = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 4FCC1F8321605CC6001B63ED;
 					};
 					4FCC1FA521605CC8001B63ED = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 4FCC1F8321605CC6001B63ED;
 					};
 				};
@@ -327,6 +345,7 @@
 				4FCC1FBE2160701C001B63ED /* tote.jpg in Resources */,
 				4FCC1F9221605CC8001B63ED /* Assets.xcassets in Resources */,
 				4FCC1F8D21605CC6001B63ED /* Main.storyboard in Resources */,
+				4FFC43E92167AE6B005D3384 /* celestial.jpg in Resources */,
 				4FCC1FBC2160685E001B63ED /* Sport.png in Resources */,
 				4F5D5AE22164FB15001D8A07 /* overlay_tote.jpg in Resources */,
 				4F5D5AD22161FB72001D8A07 /* candlestick.jpg in Resources */,
@@ -355,12 +374,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FCC1F9021605CC6001B63ED /* Climb_Data.xcdatamodeld in Sources */,
+				4F66DF35216986B50089AFE4 /* Colors.swift in Sources */,
 				4F5D5AD72162010A001D8A07 /* ClimbModel.swift in Sources */,
+				4F66DF332169821D0089AFE4 /* AnimatedLogoView.swift in Sources */,
+				4F66DF31216980A50089AFE4 /* SplashScreenViewController.swift in Sources */,
 				4FCC1F8A21605CC6001B63ED /* ClimbPageContentController.swift in Sources */,
 				4F5D5AE02164EA9D001D8A07 /* RootViewController.swift in Sources */,
 				4FCC1FC0216072C8001B63ED /* GradientView.swift in Sources */,
 				4F5D5ADE2164E4B9001D8A07 /* ClimbPageViewController.swift in Sources */,
 				4FCC1F8821605CC6001B63ED /* AppDelegate.swift in Sources */,
+				4FFC43E72167ACD5005D3384 /* AreaPageContentController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,7 +565,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Noah-Kraemer.Climb";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -560,7 +583,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Noah-Kraemer.Climb";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -580,7 +603,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Noah-Kraemer.ClimbTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Climb.app/Climb";
 			};
@@ -601,7 +624,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Noah-Kraemer.ClimbTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Climb.app/Climb";
 			};
@@ -621,7 +644,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Noah-Kraemer.ClimbUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Climb;
 			};
@@ -641,7 +664,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Noah-Kraemer.ClimbUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Climb;
 			};

@@ -17,6 +17,8 @@ class ClimbPageViewController: UIPageViewController, UIPageViewControllerDataSou
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //TODO remove
+        //initData()
         
         self.dataSource = self
         self.climbs = loadClimbs()
@@ -26,8 +28,6 @@ class ClimbPageViewController: UIPageViewController, UIPageViewControllerDataSou
         let viewControllers = [initalController]
         
         self.setViewControllers(viewControllers, direction: .forward, animated: false, completion: nil)
-        //TODO remove
-        //initData()
     }
     
     // MARK - CoreData
@@ -41,7 +41,7 @@ class ClimbPageViewController: UIPageViewController, UIPageViewControllerDataSou
         newClimb.setValue("1) 25m (25) This pitch doesn't get done much since Deep Play was established, the latter being easier with much lower ropedrag and admin.\n\n2) 40m (25) This is the \"money pitch\". Mostly Bolts (about 8), a few pieces of trad gear.", forKey: "details")
         newClimb.setValue("24", forKey: "grade")
         newClimb.setValue(UUID.init(uuidString: "19fa580d-4240-4983-8a26-4044ad3155e0"), forKey: "id")
-        newClimb.setValue("7m", forKey: "length")
+        newClimb.setValue("67m", forKey: "length")
         newClimb.setValue("The Free Route - Totem Pole", forKey: "name")
         newClimb.setValue("tote.jpg", forKey: "imageName")
         newClimb.setValue("Sport", forKey: "style")
