@@ -20,7 +20,7 @@ class RootViewController: UIViewController {
     }
     
     func showSplashViewController() {
-        splashViewController = SplashScreenViewController()
+        splashViewController = self.storyboard?.instantiateViewController(withIdentifier: "SplashScreenViewController") as! SplashScreenViewController
         
         splashViewController?.willMove(toParent: self)
         self.addChild(splashViewController!)
@@ -37,7 +37,7 @@ class RootViewController: UIViewController {
     }
     
     func showPageViewController() {
-        pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "ClimbPageViewController") as! ClimbPageViewController
+        pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "CragPageViewController") as! CragPageViewController
         
         pageViewController?.willMove(toParent: self)
         self.addChild(pageViewController!)

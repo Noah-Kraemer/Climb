@@ -10,6 +10,9 @@ import UIKit
 
 class SplashScreenViewController: UIViewController {
     
+    @IBOutlet weak var leftLabel: UILabel!
+    @IBOutlet weak var rightLabel: UILabel!
+    
     var animatedLogoView: AnimatedLogoView?
     
     override func viewDidLoad() {

@@ -38,8 +38,6 @@ class AnimatedLogoView: UIView {
         self.animationCompleteCallback = animationCompleteCallback
         
         super.init(frame: frame)
-    
-        //layer.backgroundColor = UIColor.gray.cgColor
         
         blCircleLayer = generateCircleLayer(center: blCircleCenter)
         bcCircleLayer = generateCircleLayer(center: bcCircleCenter)
@@ -159,7 +157,7 @@ class AnimatedLogoView: UIView {
         let animation = createCircleLayerAnimation(layer: trCircleLayer, centerPoint: trCircleCenter)
         
         CATransaction.setCompletionBlock{ [weak self] in
-            self?.animationCompleteCallback!()
+            //self?.animationCompleteCallback!()
         }
         
         trCircleLayer.add(animation, forKey: nil)

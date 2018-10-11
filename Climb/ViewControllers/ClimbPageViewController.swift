@@ -30,6 +30,10 @@ class ClimbPageViewController: UIPageViewController, UIPageViewControllerDataSou
         self.setViewControllers(viewControllers, direction: .forward, animated: false, completion: nil)
     }
     
+    func dismissSelf() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     // MARK - CoreData
     
     func initData() {
@@ -109,6 +113,8 @@ class ClimbPageViewController: UIPageViewController, UIPageViewControllerDataSou
         controller.grade = climb.grade
         controller.length = climb.length
         controller.detail = climb.detail
+        
+        controller.dismissCallback = dismissSelf
         
         return controller
     }

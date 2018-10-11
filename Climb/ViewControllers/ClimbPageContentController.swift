@@ -32,6 +32,10 @@ class ClimbPageContentController: UIViewController {
     @IBOutlet weak var gradeLabelBottomPaddingConstraint: NSLayoutConstraint!
     @IBOutlet weak var gradeLabelTopPaddingConstraint: NSLayoutConstraint!
     
+    var swipeDownGesureRecognizer: UISwipeGestureRecognizer?
+    
+    var dismissCallback: (() -> Void)?
+    
     var fullScreenImage: Bool = false
     
     let maxHeaderHeight: CGFloat = 90
@@ -61,11 +65,24 @@ class ClimbPageContentController: UIViewController {
         gradeLabel.text = grade
         lengthLabel.text = length
         detailLabel.text = detail
+        
+        swipeDownGesureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipeDown(_:)))
+        swipeDownGesureRecognizer?.direction = .down
+        
+        if (canAnimateHeader(detailScrollView)) {
+            overlayImageView.addGestureRecognizer(swipeDownGesureRecognizer!)
+        } else {
+            climbParentView.addGestureRecognizer(swipeDownGesureRecognizer!)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.infoSummaryViewHeightConstraint.constant = self.maxHeaderHeight
+    }
+    
+    @objc func handleSwipeDown(_ sender: UISwipeGestureRecognizer) {
+        self.dismissCallback!()
     }
 }
 
