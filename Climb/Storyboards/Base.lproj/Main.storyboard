@@ -251,14 +251,14 @@ Cave</string>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sport.png" translatesAutoresizingMaskIntoConstraints="NO" id="kX0-M6-WCf">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sport.png" translatesAutoresizingMaskIntoConstraints="NO" id="kX0-M6-WCf">
                                                 <rect key="frame" x="76" y="15" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="dIf-b5-pMe"/>
                                                     <constraint firstAttribute="height" constant="20" id="iAg-D7-bJN"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_pitches.png" translatesAutoresizingMaskIntoConstraints="NO" id="cch-9K-VcC">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pitches.png" translatesAutoresizingMaskIntoConstraints="NO" id="cch-9K-VcC">
                                                 <rect key="frame" x="114" y="15" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="3Q8-bq-swX"/>
@@ -409,11 +409,11 @@ Cave</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Sport.png" width="82" height="82"/>
         <image name="celestial.jpg" width="480" height="320"/>
         <image name="flinders.jpg" width="1024" height="683"/>
-        <image name="icon_pitches.png" width="40" height="40"/>
         <image name="overlay_tote.jpg" width="414" height="470"/>
+        <image name="pitches.png" width="40" height="40"/>
+        <image name="sport.png" width="82" height="82"/>
         <image name="tote.jpg" width="730" height="1092"/>
     </resources>
 </document>

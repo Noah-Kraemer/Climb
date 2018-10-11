@@ -13,7 +13,7 @@
 		4F5D5ADE2164E4B9001D8A07 /* ClimbPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5D5ADD2164E4B9001D8A07 /* ClimbPageViewController.swift */; };
 		4F5D5AE02164EA9D001D8A07 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5D5ADF2164EA9D001D8A07 /* RootViewController.swift */; };
 		4F5D5AE22164FB15001D8A07 /* overlay_tote.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4F5D5AE12164FB15001D8A07 /* overlay_tote.jpg */; };
-		4F5D5AE42164FEA0001D8A07 /* icon_pitches.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F5D5AE32164FEA0001D8A07 /* icon_pitches.png */; };
+		4F5D5AE42164FEA0001D8A07 /* pitches.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F5D5AE32164FEA0001D8A07 /* pitches.png */; };
 		4F66DF31216980A50089AFE4 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DF30216980A50089AFE4 /* SplashScreenViewController.swift */; };
 		4F66DF332169821D0089AFE4 /* AnimatedLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DF322169821D0089AFE4 /* AnimatedLogoView.swift */; };
 		4F66DF35216986B50089AFE4 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66DF34216986B50089AFE4 /* Colors.swift */; };
@@ -30,7 +30,7 @@
 		4FCC1F9521605CC8001B63ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1F9321605CC8001B63ED /* LaunchScreen.storyboard */; };
 		4FCC1FA021605CC8001B63ED /* ClimbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1F9F21605CC8001B63ED /* ClimbTests.swift */; };
 		4FCC1FAB21605CC8001B63ED /* ClimbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1FAA21605CC8001B63ED /* ClimbUITests.swift */; };
-		4FCC1FBC2160685E001B63ED /* Sport.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBB2160685E001B63ED /* Sport.png */; };
+		4FCC1FBC2160685E001B63ED /* sport.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBB2160685E001B63ED /* sport.png */; };
 		4FCC1FBE2160701C001B63ED /* tote.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBD2160701C001B63ED /* tote.jpg */; };
 		4FCC1FC0216072C8001B63ED /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBF216072C8001B63ED /* GradientView.swift */; };
 		4FFC43E72167ACD5005D3384 /* AreaPageContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFC43E62167ACD5005D3384 /* AreaPageContentController.swift */; };
@@ -61,7 +61,7 @@
 		4F5D5ADD2164E4B9001D8A07 /* ClimbPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbPageViewController.swift; sourceTree = "<group>"; };
 		4F5D5ADF2164EA9D001D8A07 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		4F5D5AE12164FB15001D8A07 /* overlay_tote.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = overlay_tote.jpg; sourceTree = "<group>"; };
-		4F5D5AE32164FEA0001D8A07 /* icon_pitches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pitches.png; sourceTree = "<group>"; };
+		4F5D5AE32164FEA0001D8A07 /* pitches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pitches.png; sourceTree = "<group>"; };
 		4F66DF30216980A50089AFE4 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		4F66DF322169821D0089AFE4 /* AnimatedLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedLogoView.swift; sourceTree = "<group>"; };
 		4F66DF34216986B50089AFE4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		4FCC1FA621605CC8001B63ED /* ClimbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCC1FAA21605CC8001B63ED /* ClimbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbUITests.swift; sourceTree = "<group>"; };
 		4FCC1FAC21605CC8001B63ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4FCC1FBB2160685E001B63ED /* Sport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sport.png; sourceTree = "<group>"; };
+		4FCC1FBB2160685E001B63ED /* sport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sport.png; sourceTree = "<group>"; };
 		4FCC1FBD2160701C001B63ED /* tote.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tote.jpg; sourceTree = "<group>"; };
 		4FCC1FBF216072C8001B63ED /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		4FFC43E62167ACD5005D3384 /* AreaPageContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaPageContentController.swift; sourceTree = "<group>"; };
@@ -228,20 +228,60 @@
 		4FCC1FB821605FAF001B63ED /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				4FFA8826216F490500429F84 /* Crags */,
+				4FFA8829216F494A00429F84 /* Areas */,
+				4FFA882A216F496000429F84 /* Icons */,
+				4FFA8827216F492900429F84 /* Climbs */,
+				4FCC1F8E21605CC6001B63ED /* Climb_Data.xcdatamodeld */,
+				4FCC1F9121605CC8001B63ED /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		4FFA8826216F490500429F84 /* Crags */ = {
+			isa = PBXGroup;
+			children = (
 				4F66DF382169F6030089AFE4 /* flinders.jpg */,
 				4F66DF3B2169F6040089AFE4 /* frog.jpg */,
 				4F66DF392169F6030089AFE4 /* kp.jpg */,
-				4FFC43E82167AE6B005D3384 /* celestial.jpg */,
-				4F5D5AE32164FEA0001D8A07 /* icon_pitches.png */,
-				4F5D5AE12164FB15001D8A07 /* overlay_tote.jpg */,
+			);
+			path = Crags;
+			sourceTree = "<group>";
+		};
+		4FFA8827216F492900429F84 /* Climbs */ = {
+			isa = PBXGroup;
+			children = (
+				4FFA8828216F493A00429F84 /* Overlays */,
 				4F5D5AD12161FB72001D8A07 /* candlestick.jpg */,
 				4F5D5ACF2161FB3B001D8A07 /* moai.jpg */,
-				4FCC1F8E21605CC6001B63ED /* Climb_Data.xcdatamodeld */,
-				4FCC1F9121605CC8001B63ED /* Assets.xcassets */,
 				4FCC1FBD2160701C001B63ED /* tote.jpg */,
-				4FCC1FBB2160685E001B63ED /* Sport.png */,
 			);
-			path = Assets;
+			path = Climbs;
+			sourceTree = "<group>";
+		};
+		4FFA8828216F493A00429F84 /* Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				4F5D5AE12164FB15001D8A07 /* overlay_tote.jpg */,
+			);
+			path = Overlays;
+			sourceTree = "<group>";
+		};
+		4FFA8829216F494A00429F84 /* Areas */ = {
+			isa = PBXGroup;
+			children = (
+				4FFC43E82167AE6B005D3384 /* celestial.jpg */,
+			);
+			path = Areas;
+			sourceTree = "<group>";
+		};
+		4FFA882A216F496000429F84 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				4F5D5AE32164FEA0001D8A07 /* pitches.png */,
+				4FCC1FBB2160685E001B63ED /* sport.png */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,13 +397,13 @@
 				4FCC1F9521605CC8001B63ED /* LaunchScreen.storyboard in Resources */,
 				4F66DF3F2169F6040089AFE4 /* frog.jpg in Resources */,
 				4F5D5AD02161FB3B001D8A07 /* moai.jpg in Resources */,
-				4F5D5AE42164FEA0001D8A07 /* icon_pitches.png in Resources */,
+				4F5D5AE42164FEA0001D8A07 /* pitches.png in Resources */,
 				4FCC1FBE2160701C001B63ED /* tote.jpg in Resources */,
 				4F66DF3D2169F6040089AFE4 /* kp.jpg in Resources */,
 				4FCC1F9221605CC8001B63ED /* Assets.xcassets in Resources */,
 				4FCC1F8D21605CC6001B63ED /* Main.storyboard in Resources */,
 				4FFC43E92167AE6B005D3384 /* celestial.jpg in Resources */,
-				4FCC1FBC2160685E001B63ED /* Sport.png in Resources */,
+				4FCC1FBC2160685E001B63ED /* sport.png in Resources */,
 				4F5D5AE22164FB15001D8A07 /* overlay_tote.jpg in Resources */,
 				4F5D5AD22161FB72001D8A07 /* candlestick.jpg in Resources */,
 				4F66DF3C2169F6040089AFE4 /* flinders.jpg in Resources */,
