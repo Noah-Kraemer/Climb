@@ -46,6 +46,7 @@ class ClimbPageContentController: UIViewController {
     
     var previousScrollOffset: CGFloat = 0
     
+    var pageViewIndex: Int?
     var climbImageName: String?
     var styleImageName: String?
     var name: String?

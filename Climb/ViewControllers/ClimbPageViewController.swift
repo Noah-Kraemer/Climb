@@ -13,7 +13,6 @@ import CoreData
 class ClimbPageViewController: UIPageViewController, UIPageViewControllerDataSource {
     
     var climbs: [NSManagedObject] = []
-    var currentIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,13 +91,21 @@ class ClimbPageViewController: UIPageViewController, UIPageViewControllerDataSou
     // MARK - UIPageViewControllerDatasource
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        currentIndex = (currentIndex == 0) ? climbs.count - 1 : currentIndex - 1
-        return viewControllerFor(index: currentIndex)
+        let currentViewController = viewController as! ClimbPageContentController
+        let currentIndex = currentViewController.pageViewIndex!
+        
+        let nextIndex = (currentIndex == 0) ? climbs.count - 1 : currentIndex - 1
+        
+        return viewControllerFor(index: nextIndex)
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        currentIndex = (currentIndex == climbs.count - 1) ? 0 : currentIndex + 1
-        return viewControllerFor(index: currentIndex)
+        let currentViewController = viewController as! ClimbPageContentController
+        let currentIndex = currentViewController.pageViewIndex!
+        
+        let nextIndex = (currentIndex == climbs.count - 1) ? 0 : currentIndex + 1
+        
+        return viewControllerFor(index: nextIndex)
     }
     
     func viewControllerFor(index: Int) -> UIViewController {
@@ -109,6 +116,7 @@ class ClimbPageViewController: UIPageViewController, UIPageViewControllerDataSou
         controller.climbImageName = climb.imageName
         controller.styleImageName = climb.style
         
+        controller.pageViewIndex = index
         controller.name = climb.name
         controller.grade = climb.grade
         controller.length = climb.length

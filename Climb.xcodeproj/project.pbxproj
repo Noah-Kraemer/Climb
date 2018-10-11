@@ -119,13 +119,13 @@
 		4F5D5ACB2161DD06001D8A07 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				4FCC1F8921605CC6001B63ED /* ClimbPageContentController.swift */,
-				4F5D5ADD2164E4B9001D8A07 /* ClimbPageViewController.swift */,
 				4F5D5ADF2164EA9D001D8A07 /* RootViewController.swift */,
-				4FFC43E62167ACD5005D3384 /* AreaPageContentController.swift */,
 				4F66DF30216980A50089AFE4 /* SplashScreenViewController.swift */,
-				4F66DF362169F1DC0089AFE4 /* CragPageContentController.swift */,
 				4F66DF402169FBFE0089AFE4 /* CragPageViewController.swift */,
+				4F66DF362169F1DC0089AFE4 /* CragPageContentController.swift */,
+				4FFC43E62167ACD5005D3384 /* AreaPageContentController.swift */,
+				4F5D5ADD2164E4B9001D8A07 /* ClimbPageViewController.swift */,
+				4FCC1F8921605CC6001B63ED /* ClimbPageContentController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
