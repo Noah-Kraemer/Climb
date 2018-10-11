@@ -16,7 +16,7 @@ class SplashScreenViewController: UIViewController {
     var animatedLogoView: AnimatedLogoView?
     
     override func viewDidLoad() {
-        animatedLogoView = AnimatedLogoView(frame: CGRect(x: 100.0, y: 200.0, width: 125.0, height: 275.0), animationCompleteCallback: self.animationCompleted)
+        animatedLogoView = AnimatedLogoView(frame: CGRect(x: 60.0, y: 200.0, width: 125.0, height: 275.0), animationCompleteCallback: self.animationCompleted)
         super.viewDidLoad()
         
         view.addSubview(animatedLogoView!)

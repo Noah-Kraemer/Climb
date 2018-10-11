@@ -157,7 +157,7 @@ class AnimatedLogoView: UIView {
         let animation = createCircleLayerAnimation(layer: trCircleLayer, centerPoint: trCircleCenter)
         
         CATransaction.setCompletionBlock{ [weak self] in
-            //self?.animationCompleteCallback!()
+            self?.animationCompleteCallback!()
         }
         
         trCircleLayer.add(animation, forKey: nil)
