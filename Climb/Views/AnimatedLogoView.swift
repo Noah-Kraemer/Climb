@@ -64,107 +64,34 @@ class AnimatedLogoView: UIView {
     }
     
     func startAnimating() {
-        animateBlCircle()
+        var animationChain: [(CAShapeLayer, CAAnimationGroup)] = []
+        
+        animationChain.append((blCircleLayer, createCircleLayerAnimation(layer: blCircleLayer, centerPoint: blCircleCenter)))
+        animationChain.append((bottomLineLayer, createLineLayerAnimation(layer: bottomLineLayer)))
+        animationChain.append((bcCircleLayer, createCircleLayerAnimation(layer: bcCircleLayer, centerPoint: bcCircleCenter)))
+        animationChain.append((centerLineLayer, createLineLayerAnimation(layer: centerLineLayer)))
+        animationChain.append((tcCircleLayer, createCircleLayerAnimation(layer: tcCircleLayer, centerPoint: tcCircleCenter)))
+        animationChain.append((topLineLayer, createLineLayerAnimation(layer: topLineLayer)))
+        animationChain.append((trCircleLayer, createCircleLayerAnimation(layer: trCircleLayer, centerPoint: trCircleCenter)))
+        
+        performChainedAnimations(animations: animationChain, onComplete: animationCompleteCallback!)
     }
     
-    func animateBlCircle() {
-        CATransaction.begin()
-        
-        let animation = createCircleLayerAnimation(layer: blCircleLayer, centerPoint: blCircleCenter)
-        
-        CATransaction.setCompletionBlock{ [weak self] in
-            self?.animateBottomLine()
+    func performChainedAnimations(animations: [(CAShapeLayer, CAAnimationGroup)], onComplete: @escaping () -> Void, index: Int = 0) {
+        if (index == animations.count) {
+            onComplete()
+        } else {
+            let (layer, animation) = animations[index]
+            CATransaction.begin()
+            CATransaction.setCompletionBlock{ [weak self] in
+                self?.performChainedAnimations(animations: animations, onComplete: onComplete, index: index + 1)
+            }
+            layer.isHidden = false
+            layer.add(animation, forKey: nil)
+            CATransaction.commit()
         }
-        
-        blCircleLayer.add(animation, forKey: nil)
-        
-        CATransaction.commit()
     }
-    
-    func animateBottomLine() {
-        CATransaction.begin()
-        
-        let animation = createLineLayerAnimation(layer: bottomLineLayer)
-        
-        CATransaction.setCompletionBlock{ [weak self] in
-            self?.animateBcCircle()
-        }
-        
-        bottomLineLayer.add(animation, forKey: nil)
-        
-        CATransaction.commit()
-    }
-    
-    func animateBcCircle() {
-        CATransaction.begin()
-        
-        let animation = createCircleLayerAnimation(layer: bcCircleLayer, centerPoint: bcCircleCenter)
-        
-        CATransaction.setCompletionBlock{ [weak self] in
-            self?.animateCenterLine()
-        }
-        
-        bcCircleLayer.add(animation, forKey: nil)
-        
-        CATransaction.commit()
-    }
-    
-    func animateCenterLine() {
-        CATransaction.begin()
-        
-        let animation = createLineLayerAnimation(layer: centerLineLayer)
-        
-        CATransaction.setCompletionBlock{ [weak self] in
-            self?.animateTcCircle()
-        }
-        
-        centerLineLayer.add(animation, forKey: nil)
-        
-        CATransaction.commit()
-    }
-    
-    func animateTcCircle() {
-        CATransaction.begin()
-        
-        let animation = createCircleLayerAnimation(layer: tcCircleLayer, centerPoint: tcCircleCenter)
-        
-        CATransaction.setCompletionBlock{ [weak self] in
-            self?.animateTopLine()
-        }
-        
-        tcCircleLayer.add(animation, forKey: nil)
-        
-        CATransaction.commit()
-    }
-    
-    func animateTopLine() {
-        CATransaction.begin()
-        
-        let animation = createLineLayerAnimation(layer: topLineLayer)
-        
-        CATransaction.setCompletionBlock{ [weak self] in
-            self?.animateTrCircle()
-        }
-        
-        topLineLayer.add(animation, forKey: nil)
-        
-        CATransaction.commit()
-    }
-    
-    func animateTrCircle() {
-        CATransaction.begin()
-        
-        let animation = createCircleLayerAnimation(layer: trCircleLayer, centerPoint: trCircleCenter)
-        
-        CATransaction.setCompletionBlock{ [weak self] in
-            self?.animationCompleteCallback!()
-        }
-        
-        trCircleLayer.add(animation, forKey: nil)
-        
-        CATransaction.commit()
-    }
-    
+
     func generateCircleLayer(center: CGPoint) -> CAShapeLayer {
         let layer = CAShapeLayer()
         layer.lineWidth = 5
@@ -191,12 +118,6 @@ class AnimatedLogoView: UIView {
     }
     
     func createCircleLayerAnimation(layer: CAShapeLayer, centerPoint: CGPoint) -> CAAnimationGroup {
-        // hide
-        let hideAnimation = CAKeyframeAnimation(keyPath: "hidden")
-        hideAnimation.values = [false, false]
-        hideAnimation.keyTimes = [0.0, 1.0]
-        hideAnimation.calculationMode = .discrete;
-        
         // growTransform
         let growTranslateStart = CATransform3DMakeTranslation(centerPoint.x - centerPoint.x * 0.25, centerPoint.y - centerPoint.y * 0.25, 1)
         let growTranslateEnd = CATransform3DMakeTranslation(centerPoint.x - centerPoint.x * 1.5, centerPoint.y - centerPoint.y * 1.5, 1)
@@ -216,22 +137,14 @@ class AnimatedLogoView: UIView {
 
         // Group
         let groupAnimation = CAAnimationGroup()
-        groupAnimation.animations = [growTransformAnimation, shrinkTransformAnimation, hideAnimation]
+        groupAnimation.animations = [growTransformAnimation, shrinkTransformAnimation]
         groupAnimation.repeatCount = 1
         groupAnimation.duration = 2 * ANIMATION_DURATION
-        
-        layer.isHidden = false
         
         return groupAnimation
     }
     
     func createLineLayerAnimation(layer: CAShapeLayer) -> CAAnimationGroup {
-        // hide
-        let hideAnimation = CAKeyframeAnimation(keyPath: "hidden")
-        hideAnimation.values = [false, false]
-        hideAnimation.keyTimes = [0.0, 1.0]
-        hideAnimation.calculationMode = .discrete;
-        
         let strokeEndAnimation = CAKeyframeAnimation(keyPath: "strokeEnd")
         strokeEndAnimation.timingFunction = easeInOutTimingFunction
         strokeEndAnimation.duration = ANIMATION_DURATION
@@ -240,11 +153,9 @@ class AnimatedLogoView: UIView {
         
         // Group
         let groupAnimation = CAAnimationGroup()
-        groupAnimation.animations = [strokeEndAnimation, hideAnimation]
+        groupAnimation.animations = [strokeEndAnimation]
         groupAnimation.repeatCount = 1
         groupAnimation.duration = ANIMATION_DURATION
-        
-        layer.isHidden = false
         
         return groupAnimation
     }
