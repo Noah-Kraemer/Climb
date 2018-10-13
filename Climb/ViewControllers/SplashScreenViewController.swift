@@ -16,11 +16,13 @@ class SplashScreenViewController: UIViewController {
     var animatedLogoView: AnimatedLogoView?
     
     override func viewDidLoad() {
+        leftLabel.alpha = 0
+        rightLabel.alpha = 0
         createAnimatedLogoView()
-
-        animatedLogoView!.startAnimating()
         
         super.viewDidLoad()
+        
+        beginAnimating()
     }
     
     func createAnimatedLogoView() {
@@ -35,8 +37,23 @@ class SplashScreenViewController: UIViewController {
         view.addConstraints([horizontalConstraint, verticalConstraint, widthConstraint, heightConstraint])
     }
     
+    func beginAnimating() {
+        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: {
+            self.leftLabel.alpha = 1;
+            self.rightLabel.alpha = 1;
+        }, completion: { _ in
+            self.animatedLogoView!.startAnimating()
+        })
+    }
+    
     func animationCompleted() {
-        let rootViewController = parent as! RootViewController
-        rootViewController.animationCompleted()
+        UIView.animate(withDuration: 0.5, delay: 1, options: .curveEaseOut, animations: {
+            self.leftLabel.alpha = 0;
+            self.rightLabel.alpha = 0;
+            self.animatedLogoView!.alpha = 0;
+        }, completion: { _ in
+            let rootViewController = self.parent as! RootViewController
+            rootViewController.animationCompleted()
+        })
     }
 }
