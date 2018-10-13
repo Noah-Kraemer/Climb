@@ -33,6 +33,7 @@
 		4FCC1FBC2160685E001B63ED /* sport.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBB2160685E001B63ED /* sport.png */; };
 		4FCC1FBE2160701C001B63ED /* tote.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBD2160701C001B63ED /* tote.jpg */; };
 		4FCC1FC0216072C8001B63ED /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBF216072C8001B63ED /* GradientView.swift */; };
+		4FFA883021718E3500429F84 /* trad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FFA882F21718E3500429F84 /* trad.png */; };
 		4FFC43E72167ACD5005D3384 /* AreaPageContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFC43E62167ACD5005D3384 /* AreaPageContentController.swift */; };
 		4FFC43E92167AE6B005D3384 /* celestial.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FFC43E82167AE6B005D3384 /* celestial.jpg */; };
 /* End PBXBuildFile section */
@@ -87,6 +88,7 @@
 		4FCC1FBB2160685E001B63ED /* sport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sport.png; sourceTree = "<group>"; };
 		4FCC1FBD2160701C001B63ED /* tote.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tote.jpg; sourceTree = "<group>"; };
 		4FCC1FBF216072C8001B63ED /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		4FFA882F21718E3500429F84 /* trad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trad.png; sourceTree = "<group>"; };
 		4FFC43E62167ACD5005D3384 /* AreaPageContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaPageContentController.swift; sourceTree = "<group>"; };
 		4FFC43E82167AE6B005D3384 /* celestial.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = celestial.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -278,6 +280,7 @@
 		4FFA882A216F496000429F84 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				4FFA882F21718E3500429F84 /* trad.png */,
 				4F5D5AE32164FEA0001D8A07 /* pitches.png */,
 				4FCC1FBB2160685E001B63ED /* sport.png */,
 			);
@@ -403,6 +406,7 @@
 				4FCC1F9221605CC8001B63ED /* Assets.xcassets in Resources */,
 				4FCC1F8D21605CC6001B63ED /* Main.storyboard in Resources */,
 				4FFC43E92167AE6B005D3384 /* celestial.jpg in Resources */,
+				4FFA883021718E3500429F84 /* trad.png in Resources */,
 				4FCC1FBC2160685E001B63ED /* sport.png in Resources */,
 				4F5D5AE22164FB15001D8A07 /* overlay_tote.jpg in Resources */,
 				4F5D5AD22161FB72001D8A07 /* candlestick.jpg in Resources */,

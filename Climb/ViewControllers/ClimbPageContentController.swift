@@ -26,6 +26,7 @@ class ClimbPageContentController: UIViewController {
     @IBOutlet weak var lengthLabel: UILabel!
     @IBOutlet weak var detailLabel: UILabel!
     @IBOutlet weak var pitchCountLabel: UILabel!
+    @IBOutlet weak var styleLabel: UILabel!
     
     @IBOutlet weak var infoSummaryViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var scrollViewTopPaddingConstraint: NSLayoutConstraint!
@@ -48,7 +49,7 @@ class ClimbPageContentController: UIViewController {
     
     var pageViewIndex: Int?
     var climbImageName: String?
-    var styleImageName: String?
+    var style: String?
     var name: String?
     var grade: String?
     var length: String?
@@ -61,11 +62,13 @@ class ClimbPageContentController: UIViewController {
         
         climbImageView.image = UIImage.init(named: climbImageName!)
         overlayImageView.image = UIImage.init(named: "overlay_" + climbImageName!)
-        styleImageView.image = UIImage.init(named: styleImageName!)
+        styleImageView.image = UIImage.init(named: style!.lowercased() + ".png")
+        
         nameLabel.text = name
         gradeLabel.text = grade
         lengthLabel.text = length
         detailLabel.text = detail
+        styleLabel.text = style
         
         swipeDownGesureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.handleSwipeDown(_:)))
         swipeDownGesureRecognizer?.direction = .down
