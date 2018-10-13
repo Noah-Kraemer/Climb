@@ -17,6 +17,7 @@ public class ClimbModel {
     public var length: String
     public var detail: String
     public var style: String
+    public var starRating: String
     
     init(fromObject: NSManagedObject) {
         self.id = (fromObject.value(forKey: "id") as! UUID)
@@ -26,5 +27,6 @@ public class ClimbModel {
         self.length = (fromObject.value(forKey: "length") as! String)
         self.detail = (fromObject.value(forKey: "details") as! String)
         self.style = (fromObject.value(forKey: "style") as! String)
+        self.starRating = (fromObject.value(forKey: "starRating") as! String)
     }
 }

@@ -34,6 +34,10 @@
 		4FCC1FBE2160701C001B63ED /* tote.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBD2160701C001B63ED /* tote.jpg */; };
 		4FCC1FC0216072C8001B63ED /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBF216072C8001B63ED /* GradientView.swift */; };
 		4FFA883021718E3500429F84 /* trad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FFA882F21718E3500429F84 /* trad.png */; };
+		4FFA883421719F8C00429F84 /* 3Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FFA883121719F8B00429F84 /* 3Star.png */; };
+		4FFA88392171A43500429F84 /* 2Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FFA88372171A43500429F84 /* 2Star.png */; };
+		4FFA883A2171A43500429F84 /* 1Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FFA88382171A43500429F84 /* 1Star.png */; };
+		4FFA883C2171A47300429F84 /* MockClimbData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFA883B2171A47300429F84 /* MockClimbData.swift */; };
 		4FFC43E72167ACD5005D3384 /* AreaPageContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFC43E62167ACD5005D3384 /* AreaPageContentController.swift */; };
 		4FFC43E92167AE6B005D3384 /* celestial.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FFC43E82167AE6B005D3384 /* celestial.jpg */; };
 /* End PBXBuildFile section */
@@ -89,6 +93,10 @@
 		4FCC1FBD2160701C001B63ED /* tote.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tote.jpg; sourceTree = "<group>"; };
 		4FCC1FBF216072C8001B63ED /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		4FFA882F21718E3500429F84 /* trad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trad.png; sourceTree = "<group>"; };
+		4FFA883121719F8B00429F84 /* 3Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3Star.png; sourceTree = "<group>"; };
+		4FFA88372171A43500429F84 /* 2Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2Star.png; sourceTree = "<group>"; };
+		4FFA88382171A43500429F84 /* 1Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1Star.png; sourceTree = "<group>"; };
+		4FFA883B2171A47300429F84 /* MockClimbData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockClimbData.swift; sourceTree = "<group>"; };
 		4FFC43E62167ACD5005D3384 /* AreaPageContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaPageContentController.swift; sourceTree = "<group>"; };
 		4FFC43E82167AE6B005D3384 /* celestial.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = celestial.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				4F66DF34216986B50089AFE4 /* Colors.swift */,
+				4FFA883B2171A47300429F84 /* MockClimbData.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -280,6 +289,9 @@
 		4FFA882A216F496000429F84 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				4FFA88372171A43500429F84 /* 2Star.png */,
+				4FFA88382171A43500429F84 /* 1Star.png */,
+				4FFA883121719F8B00429F84 /* 3Star.png */,
 				4FFA882F21718E3500429F84 /* trad.png */,
 				4F5D5AE32164FEA0001D8A07 /* pitches.png */,
 				4FCC1FBB2160685E001B63ED /* sport.png */,
@@ -399,6 +411,7 @@
 			files = (
 				4FCC1F9521605CC8001B63ED /* LaunchScreen.storyboard in Resources */,
 				4F66DF3F2169F6040089AFE4 /* frog.jpg in Resources */,
+				4FFA883421719F8C00429F84 /* 3Star.png in Resources */,
 				4F5D5AD02161FB3B001D8A07 /* moai.jpg in Resources */,
 				4F5D5AE42164FEA0001D8A07 /* pitches.png in Resources */,
 				4FCC1FBE2160701C001B63ED /* tote.jpg in Resources */,
@@ -406,11 +419,13 @@
 				4FCC1F9221605CC8001B63ED /* Assets.xcassets in Resources */,
 				4FCC1F8D21605CC6001B63ED /* Main.storyboard in Resources */,
 				4FFC43E92167AE6B005D3384 /* celestial.jpg in Resources */,
+				4FFA883A2171A43500429F84 /* 1Star.png in Resources */,
 				4FFA883021718E3500429F84 /* trad.png in Resources */,
 				4FCC1FBC2160685E001B63ED /* sport.png in Resources */,
 				4F5D5AE22164FB15001D8A07 /* overlay_tote.jpg in Resources */,
 				4F5D5AD22161FB72001D8A07 /* candlestick.jpg in Resources */,
 				4F66DF3C2169F6040089AFE4 /* flinders.jpg in Resources */,
+				4FFA88392171A43500429F84 /* 2Star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +453,7 @@
 				4FCC1F9021605CC6001B63ED /* Climb_Data.xcdatamodeld in Sources */,
 				4F66DF35216986B50089AFE4 /* Colors.swift in Sources */,
 				4F5D5AD72162010A001D8A07 /* ClimbModel.swift in Sources */,
+				4FFA883C2171A47300429F84 /* MockClimbData.swift in Sources */,
 				4F66DF332169821D0089AFE4 /* AnimatedLogoView.swift in Sources */,
 				4F66DF31216980A50089AFE4 /* SplashScreenViewController.swift in Sources */,
 				4FCC1F8A21605CC6001B63ED /* ClimbPageContentController.swift in Sources */,
