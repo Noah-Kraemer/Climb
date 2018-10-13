@@ -11,7 +11,9 @@ import UIKit
 class CragPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
     var crags: [String] = ["flinders.jpg", "kp.jpg", "frog.jpg"]
-    var cragNames: [String] = ["Flinders\nCave", "Kangaroo\nPoint", "Frog\nButtress"]
+    var cragNames: [String] = ["Flinders Cave", "Kangaroo Point", "Frog Buttress"]
+    var initialPanOffsets: [Int] = [500, 800, 250]
+    var reversePanDirections: [Bool] = [true, true, false]
     
     var currentContentViewController: CragPageContentController? = nil
     var nextContentViewController: CragPageContentController? = nil
@@ -70,6 +72,8 @@ class CragPageViewController: UIPageViewController, UIPageViewControllerDataSour
         controller.pageViewIndex = index
         controller.cragImageName = crags[index]
         controller.cragName = cragNames[index]
+        controller.initialPanOffset = initialPanOffsets[index]
+        controller.reversePanDirection = reversePanDirections[index]
         
         return controller
     }

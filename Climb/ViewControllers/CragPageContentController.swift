@@ -17,12 +17,18 @@ class CragPageContentController: UIViewController, UIScrollViewDelegate {
     var pageViewIndex: Int?
     var cragImageName: String?
     var cragName: String?
+    
     var isInitialView: Bool = false
+    var initialPanOffset: Int?
+    var reversePanDirection: Bool?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         cragImageView.image = scaleToHeight(image: UIImage.init(named: cragImageName!)!, height: cragImageScrollView.bounds.height);
+        
+        cragImageScrollView.bounds.origin.x += CGFloat(integerLiteral: initialPanOffset!)
+
         nameLabel.text = cragName!
         
         if (isInitialView) {
@@ -34,7 +40,11 @@ class CragPageContentController: UIViewController, UIScrollViewDelegate {
         let startBounds = cragImageScrollView.bounds
         
         var endBounds = cragImageScrollView.bounds
-        endBounds.origin.x += 200
+        if (reversePanDirection!) {
+            endBounds.origin.x -= 200
+        }  else {
+            endBounds.origin.x += 200
+        }
         
         let animation: CABasicAnimation = CABasicAnimation(keyPath: "bounds")
         animation.duration = 20.0

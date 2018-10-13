@@ -17,7 +17,6 @@
                     <view key="view" contentMode="scaleToFill" id="rnR-58-sX9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.18823529410000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Yzd-CI-0Lk"/>
                     </view>
                 </viewController>
@@ -80,6 +79,14 @@
             </objects>
             <point key="canvasLocation" x="-1365" y="-77"/>
         </scene>
+        <!--Page View Controller-->
+        <scene sceneID="FAl-1Y-YNQ">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="85W-1A-eMy" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GKY-85-ySZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-590" y="-72"/>
+        </scene>
         <!--Climb Page View Controller-->
         <scene sceneID="Woj-Pg-Qm6">
             <objects>
@@ -110,14 +117,12 @@
                                     <constraint firstAttribute="trailing" secondItem="cuy-Mh-Yc5" secondAttribute="trailing" id="yd3-JZ-RKu"/>
                                 </constraints>
                             </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaV-K6-qPL">
-                                <rect key="frame" x="0.0" y="447.5" width="360" height="169.5"/>
-                                <string key="text">Flinders
-Cave</string>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flinders Cave" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaV-K6-qPL">
+                                <rect key="frame" x="0.0" y="497.5" width="360" height="169.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="70"/>
                                 <color key="textColor" red="0.91764705879999997" green="0.8862745098" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.0" green="0.18823529410000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                         </subviews>
@@ -127,7 +132,7 @@ Cave</string>
                             <constraint firstAttribute="trailing" secondItem="g3H-dS-nSM" secondAttribute="trailing" id="FTi-sM-xdd"/>
                             <constraint firstItem="g3H-dS-nSM" firstAttribute="leading" secondItem="1HG-iD-nsi" secondAttribute="leading" id="HXJ-XZ-fIY"/>
                             <constraint firstItem="FZ6-HW-nqm" firstAttribute="trailing" secondItem="AaV-K6-qPL" secondAttribute="trailing" constant="15" id="Lca-Zn-a0y"/>
-                            <constraint firstItem="FZ6-HW-nqm" firstAttribute="bottom" secondItem="AaV-K6-qPL" secondAttribute="bottom" constant="50" id="WMp-7B-OPD"/>
+                            <constraint firstItem="FZ6-HW-nqm" firstAttribute="bottom" secondItem="AaV-K6-qPL" secondAttribute="bottom" id="WMp-7B-OPD"/>
                             <constraint firstItem="AaV-K6-qPL" firstAttribute="leading" secondItem="FZ6-HW-nqm" secondAttribute="leading" id="b7b-B0-C4y"/>
                             <constraint firstAttribute="bottom" secondItem="g3H-dS-nSM" secondAttribute="bottom" id="dAZ-D1-wat"/>
                             <constraint firstItem="g3H-dS-nSM" firstAttribute="top" secondItem="1HG-iD-nsi" secondAttribute="top" id="tf4-hr-bre"/>
@@ -151,7 +156,7 @@ Cave</string>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1359.4202898550725" y="636.68478260869574"/>
+            <point key="canvasLocation" x="-1360.8" y="636.4317841079461"/>
         </scene>
         <!--Area Page Content Controller-->
         <scene sceneID="9HC-OZ-b9C">
@@ -186,7 +191,7 @@ Cave</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Celestial Wall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urX-8G-jrF">
-                                <rect key="frame" x="98" y="253" width="178" height="37"/>
+                                <rect key="frame" x="98" y="241" width="178" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" red="0.98823529409999999" green="0.74901960779999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -231,7 +236,7 @@ Cave</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="65m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaQ-2V-v9q">
-                                                <rect key="frame" x="18" y="12.5" width="40" height="25"/>
+                                                <rect key="frame" x="18" y="13.5" width="40" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="2lR-EQ-p1W"/>
                                                     <constraint firstAttribute="width" constant="40" id="txF-KW-XEO"/>
@@ -251,21 +256,21 @@ Cave</string>
                                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sport.png" translatesAutoresizingMaskIntoConstraints="NO" id="kX0-M6-WCf">
-                                                <rect key="frame" x="131.5" y="15" width="20" height="20"/>
+                                                <rect key="frame" x="131.5" y="16" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="dIf-b5-pMe"/>
                                                     <constraint firstAttribute="height" constant="20" id="iAg-D7-bJN"/>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pitches.png" translatesAutoresizingMaskIntoConstraints="NO" id="cch-9K-VcC">
-                                                <rect key="frame" x="76" y="15" width="20" height="20"/>
+                                                <rect key="frame" x="76" y="16" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="3Q8-bq-swX"/>
                                                     <constraint firstAttribute="width" constant="20" id="arw-LV-I5G"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utg-g0-91L">
-                                                <rect key="frame" x="93.5" y="12.5" width="25" height="25"/>
+                                                <rect key="frame" x="93.5" y="13.5" width="25" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="NUA-mA-ZB6"/>
                                                     <constraint firstAttribute="width" constant="25" id="ZU1-GQ-fQF"/>
@@ -275,7 +280,7 @@ Cave</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sport" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxg-Ur-NBj">
-                                                <rect key="frame" x="156.5" y="12.5" width="50" height="25"/>
+                                                <rect key="frame" x="156.5" y="13.5" width="50" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="tdV-QZ-4qe"/>
                                                     <constraint firstAttribute="width" constant="50" id="vOj-vP-XgN"/>
@@ -285,7 +290,7 @@ Cave</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3Star.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q5h-BW-JHi">
-                                                <rect key="frame" x="219.5" y="15" width="60" height="20"/>
+                                                <rect key="frame" x="219.5" y="16" width="60" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="sar-PX-qEw"/>
                                                     <constraint firstAttribute="height" constant="20" id="uD0-Fp-IAq"/>
@@ -296,11 +301,11 @@ Cave</string>
                                         <constraints>
                                             <constraint firstItem="utg-g0-91L" firstAttribute="centerY" secondItem="iaQ-2V-v9q" secondAttribute="centerY" id="0jR-Ib-8Vx"/>
                                             <constraint firstAttribute="trailing" secondItem="yIv-nR-qC5" secondAttribute="trailing" constant="15" id="75F-2a-h6l"/>
-                                            <constraint firstItem="Rzc-L7-SKC" firstAttribute="top" secondItem="kX0-M6-WCf" secondAttribute="bottom" constant="13" id="Aaf-ke-2nL"/>
+                                            <constraint firstItem="Rzc-L7-SKC" firstAttribute="top" secondItem="kX0-M6-WCf" secondAttribute="bottom" constant="12" id="Aaf-ke-2nL"/>
                                             <constraint firstItem="yIv-nR-qC5" firstAttribute="top" secondItem="R0P-zY-jDj" secondAttribute="top" constant="15" id="DNX-ly-Ip9"/>
                                             <constraint firstItem="utg-g0-91L" firstAttribute="centerY" secondItem="cch-9K-VcC" secondAttribute="centerY" id="DdD-Uc-Myw"/>
                                             <constraint firstItem="Rzc-L7-SKC" firstAttribute="leading" secondItem="R0P-zY-jDj" secondAttribute="leading" constant="18" id="Hy2-MK-jhA"/>
-                                            <constraint firstItem="Rzc-L7-SKC" firstAttribute="top" secondItem="cch-9K-VcC" secondAttribute="bottom" constant="13" id="Pwt-sA-KfR"/>
+                                            <constraint firstItem="Rzc-L7-SKC" firstAttribute="top" secondItem="cch-9K-VcC" secondAttribute="bottom" constant="12" id="Pwt-sA-KfR"/>
                                             <constraint firstItem="iaQ-2V-v9q" firstAttribute="leading" secondItem="R0P-zY-jDj" secondAttribute="leading" constant="18" id="Q9Z-wc-rBe"/>
                                             <constraint firstItem="Q5h-BW-JHi" firstAttribute="leading" secondItem="dxg-Ur-NBj" secondAttribute="trailing" constant="13" id="Te3-0d-76H"/>
                                             <constraint firstAttribute="bottom" secondItem="Rzc-L7-SKC" secondAttribute="bottom" constant="12" id="UAW-Bf-Zng"/>
@@ -321,17 +326,17 @@ Cave</string>
                                             <constraint firstAttribute="height" constant="2" id="u0K-Ln-eC9"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
-                                                <real key="value" value="0.0"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" red="0.91764705879999997" green="0.8862745098" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
-                                                <real key="value" value="0.75"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="edgeColor">
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
                                                 <color key="value" red="0.0" green="0.18823529410000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="centerColor">
-                                                <color key="value" red="0.91764705879999997" green="0.8862745098" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fadeStartLocation">
+                                                <real key="value" value="0.94999999999999996"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fadeEndLocation">
+                                                <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>

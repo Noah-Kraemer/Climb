@@ -3,24 +3,39 @@ import UIKit
 @IBDesignable
 class GradientView: UIView {
     
-    @IBInspectable var edgeColor:       UIColor = .black { didSet { updateColors() }}
-    @IBInspectable var centerColor:     UIColor = .white { didSet { updateColors() }}
-    @IBInspectable var startLocation:   Double =   0.05 { didSet { updateLocations() }}
-    @IBInspectable var endLocation:     Double =   0.95 { didSet { updateLocations() }}
+    enum Direction {
+        case vertical
+        case horizontal
+    }
+    
+    @IBInspectable var startColor: UIColor = .black { didSet { updateColors() }}
+    @IBInspectable var endColor: UIColor = .white { didSet { updateColors() }}
+    @IBInspectable var fadeStartLocation: Double = 0 { didSet { updateLocations() }}
+    @IBInspectable var fadeEndLocation: Double = 1 { didSet { updateLocations() }}
+    
+    var fadeDirection: Direction = .horizontal { didSet { updatePoints() }}
     
     override class var layerClass: AnyClass { return CAGradientLayer.self }
     
     var gradientLayer: CAGradientLayer { return layer as! CAGradientLayer }
     
     func updatePoints() {
-        gradientLayer.startPoint =  CGPoint(x: 0, y: 0.5)
-        gradientLayer.endPoint   =  CGPoint(x: 1, y: 0.5)
+        switch (fadeDirection) {
+        case .vertical:
+            gradientLayer.startPoint = CGPoint(x: 0.5, y: 0)
+            gradientLayer.endPoint   = CGPoint(x: 0.5, y: 1)
+        case .horizontal:
+            gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
+            gradientLayer.endPoint   = CGPoint(x: 1, y: 0.5)
+        }
     }
+    
     func updateLocations() {
-        gradientLayer.locations = [0, startLocation as NSNumber, endLocation as NSNumber, 1]
+        gradientLayer.locations = [0, fadeStartLocation as NSNumber, fadeEndLocation as NSNumber, 1]
     }
+    
     func updateColors() {
-        gradientLayer.colors    = [edgeColor.cgColor, centerColor.cgColor, centerColor.cgColor, edgeColor.cgColor]
+        gradientLayer.colors = [startColor.cgColor, startColor.cgColor, endColor.cgColor, endColor.cgColor]
     }
     
     override func layoutSubviews() {

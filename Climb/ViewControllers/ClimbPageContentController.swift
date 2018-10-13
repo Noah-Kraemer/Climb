@@ -41,7 +41,7 @@ class ClimbPageContentController: UIViewController {
     var fullScreenImage: Bool = false
     
     let maxHeaderHeight: CGFloat = 90
-    let minHeaderHeight: CGFloat = 50
+    let minHeaderHeight: CGFloat = 54
     
     let minGradePadding: CGFloat = 0
     let maxGradePadding: CGFloat = 15
