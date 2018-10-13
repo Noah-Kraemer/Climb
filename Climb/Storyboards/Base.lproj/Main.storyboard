@@ -164,13 +164,6 @@ Cave</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="celestial.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bhO-l6-hmj">
                                 <rect key="frame" x="0.0" y="20" width="375" height="202.5"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Celestial Wall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urX-8G-jrF">
-                                <rect key="frame" x="118" y="253" width="178" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <color key="textColor" red="0.98823529409999999" green="0.74901960779999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MB6-fm-Vbn" customClass="GradientView" customModule="Climb" customModuleProvider="target">
                                 <rect key="frame" x="18" y="298" width="378" height="2"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -192,6 +185,13 @@ Cave</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Celestial Wall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urX-8G-jrF">
+                                <rect key="frame" x="98" y="253" width="178" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" red="0.98823529409999999" green="0.74901960779999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.18823529410000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -227,7 +227,7 @@ Cave</string>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="lhb-0a-7ci"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <color key="textColor" red="0.91764705879999997" green="0.8862745098" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.98823529409999999" green="0.74901960779999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="65m" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iaQ-2V-v9q">
@@ -284,6 +284,13 @@ Cave</string>
                                                 <color key="textColor" red="0.91764705879999997" green="0.8862745098" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3Star.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q5h-BW-JHi">
+                                                <rect key="frame" x="219.5" y="15" width="60" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="sar-PX-qEw"/>
+                                                    <constraint firstAttribute="height" constant="20" id="uD0-Fp-IAq"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -295,9 +302,11 @@ Cave</string>
                                             <constraint firstItem="Rzc-L7-SKC" firstAttribute="leading" secondItem="R0P-zY-jDj" secondAttribute="leading" constant="18" id="Hy2-MK-jhA"/>
                                             <constraint firstItem="Rzc-L7-SKC" firstAttribute="top" secondItem="cch-9K-VcC" secondAttribute="bottom" constant="13" id="Pwt-sA-KfR"/>
                                             <constraint firstItem="iaQ-2V-v9q" firstAttribute="leading" secondItem="R0P-zY-jDj" secondAttribute="leading" constant="18" id="Q9Z-wc-rBe"/>
+                                            <constraint firstItem="Q5h-BW-JHi" firstAttribute="leading" secondItem="dxg-Ur-NBj" secondAttribute="trailing" constant="13" id="Te3-0d-76H"/>
                                             <constraint firstAttribute="bottom" secondItem="Rzc-L7-SKC" secondAttribute="bottom" constant="12" id="UAW-Bf-Zng"/>
                                             <constraint firstItem="dxg-Ur-NBj" firstAttribute="centerY" secondItem="kX0-M6-WCf" secondAttribute="centerY" id="VJp-IO-C3R"/>
                                             <constraint firstItem="dxg-Ur-NBj" firstAttribute="centerX" secondItem="kX0-M6-WCf" secondAttribute="centerX" constant="40" id="Vn3-iO-7La"/>
+                                            <constraint firstItem="dxg-Ur-NBj" firstAttribute="centerY" secondItem="Q5h-BW-JHi" secondAttribute="centerY" id="bV4-7p-gkE"/>
                                             <constraint firstAttribute="bottom" secondItem="yIv-nR-qC5" secondAttribute="bottom" constant="15" id="bab-Dp-4fu"/>
                                             <constraint firstAttribute="height" constant="90" id="cpD-bv-Fsr"/>
                                             <constraint firstItem="cch-9K-VcC" firstAttribute="leading" secondItem="iaQ-2V-v9q" secondAttribute="trailing" constant="18" id="fUG-7b-iDp"/>
@@ -411,6 +420,7 @@ Cave</string>
                         <outlet property="pitchCountImageView" destination="cch-9K-VcC" id="EYF-jt-kkI"/>
                         <outlet property="pitchCountLabel" destination="utg-g0-91L" id="NKh-A7-QMl"/>
                         <outlet property="scrollViewTopPaddingConstraint" destination="bR5-4b-yRm" id="W3E-EE-CEV"/>
+                        <outlet property="starRatingImageView" destination="Q5h-BW-JHi" id="ucI-Vi-3Xa"/>
                         <outlet property="styleImageView" destination="kX0-M6-WCf" id="yv4-z2-WMa"/>
                         <outlet property="styleLabel" destination="dxg-Ur-NBj" id="wcl-TE-QmM"/>
                     </connections>
@@ -421,6 +431,7 @@ Cave</string>
         </scene>
     </scenes>
     <resources>
+        <image name="3Star.png" width="240" height="80"/>
         <image name="celestial.jpg" width="480" height="320"/>
         <image name="flinders.jpg" width="1024" height="683"/>
         <image name="overlay_tote.jpg" width="414" height="470"/>

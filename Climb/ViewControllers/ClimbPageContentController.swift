@@ -20,6 +20,7 @@ class ClimbPageContentController: UIViewController {
     @IBOutlet weak var overlayImageView: UIImageView!
     @IBOutlet weak var styleImageView: UIImageView!
     @IBOutlet weak var pitchCountImageView: UIImageView!
+    @IBOutlet weak var starRatingImageView: UIImageView!
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var gradeLabel: UILabel!
@@ -54,6 +55,7 @@ class ClimbPageContentController: UIViewController {
     var grade: String?
     var length: String?
     var detail: String?
+    var starRating: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,6 +65,11 @@ class ClimbPageContentController: UIViewController {
         climbImageView.image = UIImage.init(named: climbImageName!)
         overlayImageView.image = UIImage.init(named: "overlay_" + climbImageName!)
         styleImageView.image = UIImage.init(named: style!.lowercased() + ".png")
+        if (starRating == "0") {
+            starRatingImageView.image = nil
+        } else {
+            starRatingImageView.image = UIImage.init(named: starRating! + "Star.png")
+        }
         
         nameLabel.text = name
         gradeLabel.text = grade
