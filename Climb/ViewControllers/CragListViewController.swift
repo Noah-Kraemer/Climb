@@ -26,7 +26,11 @@ class CragListViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? CragDetailViewController {
-            destination.crag = crags[self.tableView.indexPathForSelectedRow!.row]
+            if let customSegue = segue as? ExpandCragDetailSegue {
+                let indexPath = self.tableView.indexPathForSelectedRow!
+                customSegue.cellIndexPath = indexPath
+                destination.crag = crags[indexPath.row]
+            }
         }
     }
 
@@ -43,10 +47,6 @@ class CragListViewController: UITableViewController {
         cell.backgroundImageView?.image = UIImage(named: crags[indexPath.row].imageName)
         cell.cragNameLabel?.text = crags[indexPath.row].name
         cell.gradientView?.fadeDirection = .vertical
-        
-        if (indexPath.row % 2 != 0) {
-            cell.cragNameLabel.textAlignment = .left
-        }
         
         return cell
     }
