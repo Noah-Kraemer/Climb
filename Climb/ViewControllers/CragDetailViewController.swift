@@ -10,6 +10,11 @@ import UIKit
 
 class CragDetailViewController: UIViewController {
     
+    //Panels
+    @IBOutlet weak var topPanel: UIView!
+    @IBOutlet weak var bottomPanel: UIView!
+    @IBOutlet weak var gutterPanel: UIView!
+    
     //Images
     @IBOutlet weak var cragImageView: UIImageView!
     @IBOutlet weak var driveTimeImageView: UIImageView!
