@@ -35,6 +35,7 @@ class CragDetailViewController: UIViewController {
     @IBOutlet weak var descriptionTextView: UITextView!
     
     @IBOutlet weak var gradientView: GradientView!
+    @IBOutlet weak var backButton: UIButton!
     
     var crag: CragModel?
     

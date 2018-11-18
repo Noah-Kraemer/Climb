@@ -55,6 +55,8 @@ class ExpandCragDetailSegue: UIStoryboardSegue {
         let bottomPanelFrame = detailViewController.bottomPanel.frame
         let gutterPanelFrame = detailViewController.gutterPanel.frame
         let gradientViewFrame = detailViewController.gradientView.frame
+        let cragNameLabelFrame = detailViewController.cragTitleLabel.frame
+        let backButtonFrame = detailViewController.backButton.frame
         
         let cellAboveFrame = cellAbove?.frame
         let cellTwoAboveFrame = cellTwoAbove?.frame
@@ -66,11 +68,14 @@ class ExpandCragDetailSegue: UIStoryboardSegue {
         detailViewController.bottomPanel.frame = detailViewController.bottomPanel.frame.offsetBy(dx: 0, dy: yOffset + 60)
         detailViewController.gutterPanel.frame = detailViewController.gutterPanel.frame.offsetBy(dx: 0, dy: 60)
         detailViewController.gradientView.frame = detailViewController.gradientView.frame.offsetBy(dx: 0, dy: 60)
+        detailViewController.cragTitleLabel.frame = detailViewController.cragTitleLabel.frame.offsetBy(dx: 0, dy: 180)
+        detailViewController.backButton.frame = detailViewController.backButton.frame.offsetBy(dx: 0, dy: 180)
         
         // Bring relevant views to front
         //window?.bringSubviewToFront(detailViewController.view)
         
         selectedCell.isHidden = true
+        detailViewController.backButton.alpha = 0
         
         // Animate the transition.
         UIView.animate(withDuration: 0.6, animations: { () -> Void in
@@ -79,12 +84,22 @@ class ExpandCragDetailSegue: UIStoryboardSegue {
             detailViewController.bottomPanel.frame = bottomPanelFrame
             detailViewController.gutterPanel.frame = gutterPanelFrame
             detailViewController.gradientView.frame = gradientViewFrame
+            detailViewController.cragTitleLabel.frame = cragNameLabelFrame
+            detailViewController.backButton.frame = backButtonFrame
+            
+            detailViewController.backButton.alpha = 1
             
             if (cellAbove != nil) {
                 cellAbove!.frame = cellAboveFrame!.offsetBy(dx: 0, dy: -yOffset)
             }
             if (cellTwoAbove != nil) {
                 cellTwoAbove!.frame = cellTwoAboveFrame!.offsetBy(dx: 0, dy: -yOffset)
+            }
+            if (cellBelow != nil) {
+                cellBelow!.frame = cellBelowFrame!.offsetBy(dx: 0, dy: screenHeight - yOffset)
+            }
+            if (cellTwoBelow != nil) {
+                cellTwoBelow!.frame = cellTwoBelowFrame!.offsetBy(dx: 0, dy: screenHeight - yOffset)
             }
             
         }) { (Finished) -> Void in
@@ -96,6 +111,12 @@ class ExpandCragDetailSegue: UIStoryboardSegue {
                 }
                 if (cellTwoAbove != nil) {
                     cellTwoAbove!.frame = cellTwoAboveFrame!
+                }
+                if (cellBelow != nil) {
+                    cellBelow!.frame = cellBelowFrame!
+                }
+                if (cellTwoBelow != nil) {
+                    cellTwoBelow!.frame = cellTwoBelowFrame!
                 }
             })
         }

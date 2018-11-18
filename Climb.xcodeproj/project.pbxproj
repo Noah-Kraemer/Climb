@@ -109,7 +109,7 @@
 		D94FC6AD219EB69B00E0884F /* CragDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CragDetailViewController.swift; sourceTree = "<group>"; };
 		D94FC6AF219EB8A100E0884F /* CragModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CragModel.swift; sourceTree = "<group>"; };
 		D94FC6B121A0DF7500E0884F /* MockCragData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCragData.swift; sourceTree = "<group>"; };
-		D94FC6B421A1022200E0884F /* ExpandCragDetailSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandCragDetailSegue.swift; sourceTree = "<group>"; };
+		D94FC6B421A1022200E0884F /* ExpandCragDetailSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandCragDetailSegue.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		D98DBC0521996F55004B7577 /* CragListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CragListViewController.swift; sourceTree = "<group>"; };
 		D98DBC0821997C9D004B7577 /* ClimbListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbListViewController.swift; sourceTree = "<group>"; };
 		D98DBC0A2199B5DC004B7577 /* ClimbListBulletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbListBulletView.swift; sourceTree = "<group>"; };
