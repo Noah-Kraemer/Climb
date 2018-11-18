@@ -13,7 +13,7 @@ class GradientView: UIView {
     @IBInspectable var fadeStartLocation: Double = 0 { didSet { updateLocations() }}
     @IBInspectable var fadeEndLocation: Double = 1 { didSet { updateLocations() }}
     
-    var fadeDirection: Direction = .horizontal { didSet { updatePoints() }}
+    var fadeDirection: Direction = .vertical { didSet { updatePoints() }}
     
     override class var layerClass: AnyClass { return CAGradientLayer.self }
     

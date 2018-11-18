@@ -11,7 +11,7 @@ import UIKit
 class RootViewController: UIViewController {
     
     var splashViewController: SplashScreenViewController?
-    var pageViewController: UIPageViewController?
+    var cragListViewController: CragListViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,15 +33,15 @@ class RootViewController: UIViewController {
         splashViewController?.view.removeFromSuperview()
         splashViewController?.removeFromParent()
         
-        showPageViewController()
+        showCragListViewController()
     }
     
-    func showPageViewController() {
-        pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "CragPageViewController") as! CragPageViewController
+    func showCragListViewController() {
+        cragListViewController = self.storyboard?.instantiateViewController(withIdentifier: "CragListViewController") as! CragListViewController
         
-        pageViewController?.willMove(toParent: self)
-        self.addChild(pageViewController!)
-        self.view.addSubview(pageViewController!.view)
-        pageViewController?.didMove(toParent: self)
+        cragListViewController?.willMove(toParent: self)
+        self.addChild(cragListViewController!)
+        self.view.addSubview(cragListViewController!.view)
+        cragListViewController?.didMove(toParent: self)
     }
 }
