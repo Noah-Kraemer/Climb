@@ -64,12 +64,12 @@ class ExpandCragDetailSegue: UIStoryboardSegue {
         let cellTwoBelowFrame = cellTwoBelow?.frame
         
         // Move components to starting positions
-        detailViewController.topPanel.frame = detailViewController.topPanel.frame.offsetBy(dx: 0, dy: yOffset - 20)
+        detailViewController.topPanel.frame = detailViewController.topPanel.frame.offsetBy(dx: 0, dy: yOffset)
         detailViewController.bottomPanel.frame = detailViewController.bottomPanel.frame.offsetBy(dx: 0, dy: yOffset + 60)
         detailViewController.gutterPanel.frame = detailViewController.gutterPanel.frame.offsetBy(dx: 0, dy: 60)
         detailViewController.gradientView.frame = detailViewController.gradientView.frame.offsetBy(dx: 0, dy: 60)
-        detailViewController.cragTitleLabel.frame = detailViewController.cragTitleLabel.frame.offsetBy(dx: 0, dy: 180)
-        detailViewController.backButton.frame = detailViewController.backButton.frame.offsetBy(dx: 0, dy: 180)
+        detailViewController.cragTitleLabel.frame = detailViewController.cragTitleLabel.frame.offsetBy(dx: 0, dy: 160)
+        detailViewController.backButton.frame = detailViewController.backButton.frame.offsetBy(dx: 0, dy: 160)
         
         // Bring relevant views to front
         //window?.bringSubviewToFront(detailViewController.view)

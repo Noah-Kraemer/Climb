@@ -40,6 +40,9 @@
 		4FFA883C2171A47300429F84 /* MockClimbData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFA883B2171A47300429F84 /* MockClimbData.swift */; };
 		4FFC43E72167ACD5005D3384 /* AreaPageContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFC43E62167ACD5005D3384 /* AreaPageContentController.swift */; };
 		4FFC43E92167AE6B005D3384 /* celestial.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FFC43E82167AE6B005D3384 /* celestial.jpg */; };
+		D915358F21A274A800C90981 /* driveIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D915358D21A274A800C90981 /* driveIcon.png */; };
+		D915359421A2767500C90981 /* listIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D915359321A2767400C90981 /* listIcon.png */; };
+		D915359621A2C2E500C90981 /* hikeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D915359521A2C2E500C90981 /* hikeIcon.png */; };
 		D94FC6AE219EB69B00E0884F /* CragDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94FC6AD219EB69B00E0884F /* CragDetailViewController.swift */; };
 		D94FC6B0219EB8A100E0884F /* CragModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94FC6AF219EB8A100E0884F /* CragModel.swift */; };
 		D94FC6B221A0DF7500E0884F /* MockCragData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94FC6B121A0DF7500E0884F /* MockCragData.swift */; };
@@ -106,6 +109,9 @@
 		4FFA883B2171A47300429F84 /* MockClimbData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockClimbData.swift; sourceTree = "<group>"; };
 		4FFC43E62167ACD5005D3384 /* AreaPageContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaPageContentController.swift; sourceTree = "<group>"; };
 		4FFC43E82167AE6B005D3384 /* celestial.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = celestial.jpg; sourceTree = "<group>"; };
+		D915358D21A274A800C90981 /* driveIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = driveIcon.png; path = ../../../../../Downloads/driveIcon.png; sourceTree = "<group>"; };
+		D915359321A2767400C90981 /* listIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = listIcon.png; path = ../../../../../Downloads/listIcon.png; sourceTree = "<group>"; };
+		D915359521A2C2E500C90981 /* hikeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hikeIcon.png; path = ../../../../../Downloads/hikeIcon.png; sourceTree = "<group>"; };
 		D94FC6AD219EB69B00E0884F /* CragDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CragDetailViewController.swift; sourceTree = "<group>"; };
 		D94FC6AF219EB8A100E0884F /* CragModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CragModel.swift; sourceTree = "<group>"; };
 		D94FC6B121A0DF7500E0884F /* MockCragData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCragData.swift; sourceTree = "<group>"; };
@@ -306,6 +312,9 @@
 		4FFA882A216F496000429F84 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				D915359521A2C2E500C90981 /* hikeIcon.png */,
+				D915359321A2767400C90981 /* listIcon.png */,
+				D915358D21A274A800C90981 /* driveIcon.png */,
 				4FFA88372171A43500429F84 /* 2Star.png */,
 				4FFA88382171A43500429F84 /* 1Star.png */,
 				4FFA883121719F8B00429F84 /* 3Star.png */,
@@ -447,8 +456,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FCC1F9521605CC8001B63ED /* LaunchScreen.storyboard in Resources */,
+				D915358F21A274A800C90981 /* driveIcon.png in Resources */,
 				4F66DF3F2169F6040089AFE4 /* frog.jpg in Resources */,
 				4FFA883421719F8C00429F84 /* 3Star.png in Resources */,
+				D915359621A2C2E500C90981 /* hikeIcon.png in Resources */,
+				D915359421A2767500C90981 /* listIcon.png in Resources */,
 				4F5D5AD02161FB3B001D8A07 /* moai.jpg in Resources */,
 				4F5D5AE42164FEA0001D8A07 /* pitches.png in Resources */,
 				4FCC1FBE2160701C001B63ED /* tote.jpg in Resources */,
