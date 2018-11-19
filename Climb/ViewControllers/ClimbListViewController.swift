@@ -39,10 +39,14 @@ class ClimbListViewController: UITableViewController {
     
     @IBOutlet weak var climbTableView: UITableView!
     
+    var dismissClimbListTransition: DismissClimbListTransition?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
         //TODO load climbs from core data
+        
+        dismissClimbListTransition = DismissClimbListTransition(viewController: self)
     }
     
     @IBAction func handleSwipe(_ sender: UISwipeGestureRecognizer) {

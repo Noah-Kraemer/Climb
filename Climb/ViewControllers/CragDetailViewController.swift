@@ -41,6 +41,8 @@ class CragDetailViewController: UIViewController {
     
     var accessExpanded: Bool = true
     
+    var showClimbListTransition: ShowClimbListTransition?
+    
     override func viewDidLoad() {
         cragImageView.image = UIImage(named: crag!.imageName)
         driveTimeImageView.image = UIImage(named: "driveIcon.png")
@@ -62,10 +64,52 @@ class CragDetailViewController: UIViewController {
         descriptionTextView.text = crag?.descriptionText
         
         gradientView.fadeDirection = .vertical
+        
+        showClimbListTransition = ShowClimbListTransition(viewController: self)
     }
     
     @IBAction func handleBackButtonPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "showClimbListSegue") {
+            segue.destination.transitioningDelegate = self
+        }
+    }
+}
+
+extension CragDetailViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController,
+                             presenting: UIViewController,
+                             source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return ShowClimbListAnimationController(interactionController: self.showClimbListTransition!)
+    }
+    
+    func interactionControllerForPresentation(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        guard let animator = animator as? ShowClimbListAnimationController,
+            let interactionController = animator.interactionController,
+            interactionController.interactionInProgress
+            else {
+                return nil
+        }
+        return interactionController
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        guard let climbListViewController = dismissed as? ClimbListViewController else {
+            return nil
+        }
+        return DismissClimbListAnimationController(interactionController: climbListViewController.dismissClimbListTransition!)
+    }
+    
+    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        guard let animator = animator as? DismissClimbListAnimationController,
+            let interactionController = animator.interactionController,
+            interactionController.interactionInProgress
+            else {
+                return nil
+        }
+        return interactionController
+    }
 }

@@ -487,9 +487,6 @@
                             <constraint firstItem="L91-PU-Yp3" firstAttribute="leading" secondItem="0a0-OX-CJy" secondAttribute="leading" id="kzs-j4-UFE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0a0-OX-CJy"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="Qbv-Rr-2gb" appends="YES" id="GsR-Gs-H0W"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="accessLabel" destination="pbY-Tl-Gl3" id="s0i-Kf-wIt"/>
@@ -510,14 +507,10 @@
                         <outlet property="hikeTimeLabel" destination="ahq-Yv-Rsh" id="PXU-fw-yfc"/>
                         <outlet property="topPanel" destination="j3x-np-4uO" id="Zms-mT-MwT"/>
                         <outlet property="weatherImageView" destination="rjw-PQ-kIi" id="07u-fS-2GC"/>
+                        <segue destination="xTp-J1-NZk" kind="show" identifier="showClimbListSegue" id="04z-Xv-cmG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYn-Sa-PgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="Qbv-Rr-2gb">
-                    <connections>
-                        <segue destination="xTp-J1-NZk" kind="showDetail" id="ogK-M7-M7u"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1087.2" y="1491.9040479760122"/>
         </scene>

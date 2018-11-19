@@ -43,6 +43,10 @@
 		D915358F21A274A800C90981 /* driveIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D915358D21A274A800C90981 /* driveIcon.png */; };
 		D915359421A2767500C90981 /* listIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D915359321A2767400C90981 /* listIcon.png */; };
 		D915359621A2C2E500C90981 /* hikeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D915359521A2C2E500C90981 /* hikeIcon.png */; };
+		D915359A21A2C62F00C90981 /* DismissClimbListTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D915359921A2C62F00C90981 /* DismissClimbListTransition.swift */; };
+		D915359C21A2C88000C90981 /* DismissClimbListAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D915359B21A2C88000C90981 /* DismissClimbListAnimationController.swift */; };
+		D915359E21A2D36E00C90981 /* ShowClimbListAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D915359D21A2D36E00C90981 /* ShowClimbListAnimationController.swift */; };
+		D91535A021A2DDE200C90981 /* ShowClimbListTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D915359F21A2DDE200C90981 /* ShowClimbListTransition.swift */; };
 		D94FC6AE219EB69B00E0884F /* CragDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94FC6AD219EB69B00E0884F /* CragDetailViewController.swift */; };
 		D94FC6B0219EB8A100E0884F /* CragModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94FC6AF219EB8A100E0884F /* CragModel.swift */; };
 		D94FC6B221A0DF7500E0884F /* MockCragData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94FC6B121A0DF7500E0884F /* MockCragData.swift */; };
@@ -112,6 +116,10 @@
 		D915358D21A274A800C90981 /* driveIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = driveIcon.png; path = ../../../../../Downloads/driveIcon.png; sourceTree = "<group>"; };
 		D915359321A2767400C90981 /* listIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = listIcon.png; path = ../../../../../Downloads/listIcon.png; sourceTree = "<group>"; };
 		D915359521A2C2E500C90981 /* hikeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hikeIcon.png; path = ../../../../../Downloads/hikeIcon.png; sourceTree = "<group>"; };
+		D915359921A2C62F00C90981 /* DismissClimbListTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissClimbListTransition.swift; sourceTree = "<group>"; };
+		D915359B21A2C88000C90981 /* DismissClimbListAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissClimbListAnimationController.swift; sourceTree = "<group>"; };
+		D915359D21A2D36E00C90981 /* ShowClimbListAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowClimbListAnimationController.swift; sourceTree = "<group>"; };
+		D915359F21A2DDE200C90981 /* ShowClimbListTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowClimbListTransition.swift; sourceTree = "<group>"; };
 		D94FC6AD219EB69B00E0884F /* CragDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CragDetailViewController.swift; sourceTree = "<group>"; };
 		D94FC6AF219EB8A100E0884F /* CragModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CragModel.swift; sourceTree = "<group>"; };
 		D94FC6B121A0DF7500E0884F /* MockCragData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCragData.swift; sourceTree = "<group>"; };
@@ -329,6 +337,10 @@
 			isa = PBXGroup;
 			children = (
 				D94FC6B421A1022200E0884F /* ExpandCragDetailSegue.swift */,
+				D915359921A2C62F00C90981 /* DismissClimbListTransition.swift */,
+				D915359B21A2C88000C90981 /* DismissClimbListAnimationController.swift */,
+				D915359D21A2D36E00C90981 /* ShowClimbListAnimationController.swift */,
+				D915359F21A2DDE200C90981 /* ShowClimbListTransition.swift */,
 			);
 			path = Segues;
 			sourceTree = "<group>";
@@ -500,12 +512,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FCC1F9021605CC6001B63ED /* Climb_Data.xcdatamodeld in Sources */,
+				D915359A21A2C62F00C90981 /* DismissClimbListTransition.swift in Sources */,
 				4F66DF35216986B50089AFE4 /* Colors.swift in Sources */,
 				4F5D5AD72162010A001D8A07 /* ClimbModel.swift in Sources */,
+				D91535A021A2DDE200C90981 /* ShowClimbListTransition.swift in Sources */,
 				4FFA883C2171A47300429F84 /* MockClimbData.swift in Sources */,
+				D915359C21A2C88000C90981 /* DismissClimbListAnimationController.swift in Sources */,
 				4F66DF332169821D0089AFE4 /* AnimatedLogoView.swift in Sources */,
 				4F66DF31216980A50089AFE4 /* SplashScreenViewController.swift in Sources */,
 				D94FC6B221A0DF7500E0884F /* MockCragData.swift in Sources */,
+				D915359E21A2D36E00C90981 /* ShowClimbListAnimationController.swift in Sources */,
 				D98DBC0621996F55004B7577 /* CragListViewController.swift in Sources */,
 				4FCC1F8A21605CC6001B63ED /* ClimbPageContentController.swift in Sources */,
 				4F66DF412169FBFE0089AFE4 /* CragPageViewController.swift in Sources */,
