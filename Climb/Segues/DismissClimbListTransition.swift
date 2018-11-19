@@ -28,6 +28,8 @@ class DismissClimbListTransition: UIPercentDrivenInteractiveTransition {
     
     @objc func handleGesture(_ gestureRecognizer: UIPanGestureRecognizer) {
         let translation = gestureRecognizer.translation(in: gestureRecognizer.view!.superview!)
+        let velocity = gestureRecognizer.velocity(in: gestureRecognizer.view!.superview!)
+        
         var progress = (translation.x / UIScreen.main.bounds.size.width)
         progress = CGFloat(fminf(fmaxf(Float(progress), 0.0), 1.0))
         
@@ -36,7 +38,7 @@ class DismissClimbListTransition: UIPercentDrivenInteractiveTransition {
             interactionInProgress = true
             viewController.dismiss(animated: true, completion: nil)
         case .changed:
-            shouldCompleteTransition = progress > 0.5
+            shouldCompleteTransition = progress > 0.5 || velocity.x > 500
             update(progress)
         case .cancelled:
             interactionInProgress = false
