@@ -48,7 +48,7 @@ class ExpandCragDetailSegue: UIStoryboardSegue {
         detailViewController.view.frame = CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight)
         
         // Calculate y offset
-        let yOffset = selectedCell.frame.minY
+        let yOffset = selectedCell.frame.minY - listViewController.cragTableView.contentOffset.y
         
         // Store destination positions
         let topPanelFrame = detailViewController.topPanel.frame
@@ -72,7 +72,7 @@ class ExpandCragDetailSegue: UIStoryboardSegue {
         detailViewController.backButton.frame = detailViewController.backButton.frame.offsetBy(dx: 0, dy: 160)
         
         // Bring relevant views to front
-        //window?.bringSubviewToFront(detailViewController.view)
+        window?.bringSubviewToFront(listViewController.view)
         
         selectedCell.isHidden = true
         detailViewController.backButton.alpha = 0
