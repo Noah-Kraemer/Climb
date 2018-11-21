@@ -47,6 +47,8 @@
 		D915359C21A2C88000C90981 /* DismissClimbListAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D915359B21A2C88000C90981 /* DismissClimbListAnimationController.swift */; };
 		D915359E21A2D36E00C90981 /* ShowClimbListAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D915359D21A2D36E00C90981 /* ShowClimbListAnimationController.swift */; };
 		D91535A021A2DDE200C90981 /* ShowClimbListTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D915359F21A2DDE200C90981 /* ShowClimbListTransition.swift */; };
+		D91535A221A3929300C90981 /* CollapseCragDetailSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91535A121A3929300C90981 /* CollapseCragDetailSegue.swift */; };
+		D91535A621A394F900C90981 /* climbCountIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D91535A521A394F900C90981 /* climbCountIcon.png */; };
 		D94FC6AE219EB69B00E0884F /* CragDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94FC6AD219EB69B00E0884F /* CragDetailViewController.swift */; };
 		D94FC6B0219EB8A100E0884F /* CragModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94FC6AF219EB8A100E0884F /* CragModel.swift */; };
 		D94FC6B221A0DF7500E0884F /* MockCragData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94FC6B121A0DF7500E0884F /* MockCragData.swift */; };
@@ -120,6 +122,8 @@
 		D915359B21A2C88000C90981 /* DismissClimbListAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissClimbListAnimationController.swift; sourceTree = "<group>"; };
 		D915359D21A2D36E00C90981 /* ShowClimbListAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowClimbListAnimationController.swift; sourceTree = "<group>"; };
 		D915359F21A2DDE200C90981 /* ShowClimbListTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowClimbListTransition.swift; sourceTree = "<group>"; };
+		D91535A121A3929300C90981 /* CollapseCragDetailSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapseCragDetailSegue.swift; sourceTree = "<group>"; };
+		D91535A521A394F900C90981 /* climbCountIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = climbCountIcon.png; path = ../../../../../Downloads/climbCountIcon.png; sourceTree = "<group>"; };
 		D94FC6AD219EB69B00E0884F /* CragDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CragDetailViewController.swift; sourceTree = "<group>"; };
 		D94FC6AF219EB8A100E0884F /* CragModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CragModel.swift; sourceTree = "<group>"; };
 		D94FC6B121A0DF7500E0884F /* MockCragData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCragData.swift; sourceTree = "<group>"; };
@@ -320,6 +324,7 @@
 		4FFA882A216F496000429F84 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				D91535A521A394F900C90981 /* climbCountIcon.png */,
 				D915359521A2C2E500C90981 /* hikeIcon.png */,
 				D915359321A2767400C90981 /* listIcon.png */,
 				D915358D21A274A800C90981 /* driveIcon.png */,
@@ -341,6 +346,7 @@
 				D915359B21A2C88000C90981 /* DismissClimbListAnimationController.swift */,
 				D915359D21A2D36E00C90981 /* ShowClimbListAnimationController.swift */,
 				D915359F21A2DDE200C90981 /* ShowClimbListTransition.swift */,
+				D91535A121A3929300C90981 /* CollapseCragDetailSegue.swift */,
 			);
 			path = Segues;
 			sourceTree = "<group>";
@@ -467,6 +473,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91535A621A394F900C90981 /* climbCountIcon.png in Resources */,
 				4FCC1F9521605CC8001B63ED /* LaunchScreen.storyboard in Resources */,
 				D915358F21A274A800C90981 /* driveIcon.png in Resources */,
 				4F66DF3F2169F6040089AFE4 /* frog.jpg in Resources */,
@@ -513,6 +520,7 @@
 			files = (
 				4FCC1F9021605CC6001B63ED /* Climb_Data.xcdatamodeld in Sources */,
 				D915359A21A2C62F00C90981 /* DismissClimbListTransition.swift in Sources */,
+				D91535A221A3929300C90981 /* CollapseCragDetailSegue.swift in Sources */,
 				4F66DF35216986B50089AFE4 /* Colors.swift in Sources */,
 				4F5D5AD72162010A001D8A07 /* ClimbModel.swift in Sources */,
 				D91535A021A2DDE200C90981 /* ShowClimbListTransition.swift in Sources */,

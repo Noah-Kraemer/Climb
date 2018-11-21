@@ -34,13 +34,13 @@ class CragDetailViewController: UIViewController {
     @IBOutlet weak var accessTextView: UITextView!
     @IBOutlet weak var descriptionTextView: UITextView!
     
-    @IBOutlet weak var gradientView: GradientView!
+    @IBOutlet weak var topGradientView: GradientView!
+    @IBOutlet weak var bottomGradientView: GradientView!
     @IBOutlet weak var backButton: UIButton!
     
     var crag: CragModel?
-    
+    var indexPath: IndexPath?
     var accessExpanded: Bool = true
-    
     var showClimbListTransition: ShowClimbListTransition?
     
     override func viewDidLoad() {
@@ -63,18 +63,20 @@ class CragDetailViewController: UIViewController {
         accessTextView.text = crag?.accessText
         descriptionTextView.text = crag?.descriptionText
         
-        gradientView.fadeDirection = .vertical
+        bottomGradientView.fadeDirection = .vertical
         
         showClimbListTransition = ShowClimbListTransition(viewController: self)
-    }
-    
-    @IBAction func handleBackButtonPressed(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "showClimbListSegue") {
             segue.destination.transitioningDelegate = self
+        }
+        
+        if (segue.identifier == "collapseCragDetailSegue") {
+            if let customSegue = segue as? CollapseCragDetailSegue {
+                customSegue.cellIndexPath = indexPath
+            }
         }
     }
 }

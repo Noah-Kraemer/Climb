@@ -47,6 +47,15 @@ class ExpandCragDetailSegue: UIStoryboardSegue {
         window?.insertSubview(detailViewController.view, belowSubview: listViewController.view)
         detailViewController.view.frame = CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight)
         
+        // Create gradient view to emulate crag cell gradient
+        let tempGradientView = GradientView()
+        tempGradientView.startColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
+        tempGradientView.endColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.75)
+        tempGradientView.fadeStartLocation = 0.5
+        tempGradientView.fadeEndLocation = 1
+        tempGradientView.frame = CGRect(x: 0, y: 0, width: screenWidth, height: 250)
+        detailViewController.topPanel.insertSubview(tempGradientView, at: 1)
+        
         // Calculate y offset
         let yOffset = selectedCell.frame.minY - listViewController.cragTableView.contentOffset.y
         
@@ -54,7 +63,8 @@ class ExpandCragDetailSegue: UIStoryboardSegue {
         let topPanelFrame = detailViewController.topPanel.frame
         let bottomPanelFrame = detailViewController.bottomPanel.frame
         let gutterPanelFrame = detailViewController.gutterPanel.frame
-        let gradientViewFrame = detailViewController.gradientView.frame
+        let bottomGradientViewFrame = detailViewController.bottomGradientView.frame
+        let topGradientViewFrame = detailViewController.topGradientView.frame
         let cragNameLabelFrame = detailViewController.cragTitleLabel.frame
         let backButtonFrame = detailViewController.backButton.frame
         
@@ -67,12 +77,14 @@ class ExpandCragDetailSegue: UIStoryboardSegue {
         detailViewController.topPanel.frame = detailViewController.topPanel.frame.offsetBy(dx: 0, dy: yOffset)
         detailViewController.bottomPanel.frame = detailViewController.bottomPanel.frame.offsetBy(dx: 0, dy: yOffset + 60)
         detailViewController.gutterPanel.frame = detailViewController.gutterPanel.frame.offsetBy(dx: 0, dy: 60)
-        detailViewController.gradientView.frame = detailViewController.gradientView.frame.offsetBy(dx: 0, dy: 60)
-        detailViewController.cragTitleLabel.frame = detailViewController.cragTitleLabel.frame.offsetBy(dx: 0, dy: 160)
-        detailViewController.backButton.frame = detailViewController.backButton.frame.offsetBy(dx: 0, dy: 160)
+        detailViewController.bottomGradientView.frame = detailViewController.bottomGradientView.frame.offsetBy(dx: 0, dy: 125)
+        detailViewController.topGradientView.frame = detailViewController.topGradientView.frame.offsetBy(dx: 0, dy: -100)
+        detailViewController.cragTitleLabel.frame = detailViewController.cragTitleLabel.frame.offsetBy(dx: 0, dy: 170)
+        detailViewController.backButton.frame = detailViewController.backButton.frame.offsetBy(dx: 0, dy: 170)
         
         // Bring relevant views to front
         window?.bringSubviewToFront(listViewController.view)
+        detailViewController.topPanel.bringSubviewToFront(detailViewController.cragTitleLabel)
         
         selectedCell.isHidden = true
         detailViewController.backButton.alpha = 0
@@ -83,9 +95,12 @@ class ExpandCragDetailSegue: UIStoryboardSegue {
             detailViewController.topPanel.frame = topPanelFrame
             detailViewController.bottomPanel.frame = bottomPanelFrame
             detailViewController.gutterPanel.frame = gutterPanelFrame
-            detailViewController.gradientView.frame = gradientViewFrame
+            detailViewController.bottomGradientView.frame = bottomGradientViewFrame
+            detailViewController.topGradientView.frame = topGradientViewFrame
             detailViewController.cragTitleLabel.frame = cragNameLabelFrame
             detailViewController.backButton.frame = backButtonFrame
+            
+            tempGradientView.frame = tempGradientView.frame.offsetBy(dx: 0, dy: 250)
             
             detailViewController.backButton.alpha = 1
             
@@ -104,6 +119,7 @@ class ExpandCragDetailSegue: UIStoryboardSegue {
             
         }) { (Finished) -> Void in
             self.source.present(self.destination as UIViewController, animated: false, completion: {
+                tempGradientView.removeFromSuperview()
                 selectedCell.isHidden = false
                 
                 if (cellAbove != nil) {

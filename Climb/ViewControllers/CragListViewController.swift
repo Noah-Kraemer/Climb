@@ -30,8 +30,14 @@ class CragListViewController: UITableViewController {
                 let indexPath = self.tableView.indexPathForSelectedRow!
                 customSegue.cellIndexPath = indexPath
                 destination.crag = crags[indexPath.row]
+                destination.indexPath = indexPath
             }
         }
+    }
+    
+    @IBAction func unwindToCragListView(_ unwindSegue: UIStoryboardSegue) {
+        // let sourceViewController = unwindSegue.source
+        // Use data from the view controller which initiated the unwind segue
     }
 
     
@@ -46,7 +52,6 @@ class CragListViewController: UITableViewController {
         
         cell.backgroundImageView?.image = UIImage(named: crags[indexPath.row].imageName)
         cell.cragNameLabel?.text = crags[indexPath.row].name
-        cell.gradientView?.fadeDirection = .vertical
         
         return cell
     }

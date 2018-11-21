@@ -209,7 +209,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="60" id="Kkt-PK-uRJ"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="48"/>
                                             <color key="textColor" red="0.91764705879999997" green="0.8862745098" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                             <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -261,9 +261,31 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flinders.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YAA-jd-LrS">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flinders Cave" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2M-JB-RX2">
-                                        <rect key="frame" x="70" y="25" width="295" height="62"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nlR-Kt-C8C" customClass="GradientView" customModule="Climb" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" white="0.0" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fadeStartLocation">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="fadeEndLocation">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kangaroo Point" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2M-JB-RX2">
+                                        <rect key="frame" x="70" y="15" width="295" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="hmR-Og-0tj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="48"/>
                                         <color key="textColor" red="0.91764705879999997" green="0.8862745098" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -288,14 +310,14 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18m-zq-pMl">
-                                        <rect key="frame" x="10" y="30" width="50" height="50"/>
+                                        <rect key="frame" x="10" y="20" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="j8p-1y-z4I"/>
                                             <constraint firstAttribute="height" constant="50" id="yQu-c6-5E8"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="listIcon.png"/>
                                         <connections>
-                                            <action selector="handleBackButtonPressed:" destination="tuP-ri-sBx" eventType="touchUpInside" id="8Ev-lo-DgO"/>
+                                            <segue destination="irF-6P-5Td" kind="unwind" identifier="collapseCragDetailSegue" customClass="CollapseCragDetailSegue" customModule="Climb" customModuleProvider="target" unwindAction="unwindToCragListView:" id="3Cj-kZ-v3U"/>
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9R6-FF-wTq">
@@ -319,14 +341,14 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hikeIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="S0O-W9-3la">
-                                                <rect key="frame" x="125" y="10" width="40" height="40"/>
+                                                <rect key="frame" x="115" y="10" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="CL6-rA-1Rg"/>
                                                     <constraint firstAttribute="width" constant="40" id="iBp-5m-I9M"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5m" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahq-Yv-Rsh">
-                                                <rect key="frame" x="170" y="17.5" width="50" height="25"/>
+                                                <rect key="frame" x="160" y="17.5" width="50" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="Vzd-af-tez"/>
                                                     <constraint firstAttribute="width" constant="50" id="uMG-Eh-0jD"/>
@@ -335,15 +357,15 @@
                                                 <color key="textColor" red="0.98823529409999999" green="0.74901960779999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pitches.png" translatesAutoresizingMaskIntoConstraints="NO" id="G1g-YR-SgY">
-                                                <rect key="frame" x="240" y="10" width="40" height="40"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="climbCountIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="G1g-YR-SgY">
+                                                <rect key="frame" x="215" y="10" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="1G0-h6-6My"/>
                                                     <constraint firstAttribute="height" constant="40" id="WNg-qh-cDK"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCd-iy-KgS">
-                                                <rect key="frame" x="285" y="17.5" width="50" height="25"/>
+                                                <rect key="frame" x="255" y="17.5" width="50" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="P7e-Dv-zqc"/>
                                                     <constraint firstAttribute="height" constant="25" id="bHu-2t-P1T"/>
@@ -372,10 +394,10 @@
                                             <constraint firstAttribute="bottom" secondItem="S0O-W9-3la" secondAttribute="bottom" constant="10" id="KjE-g3-ixS"/>
                                             <constraint firstAttribute="bottom" secondItem="azU-rf-lsf" secondAttribute="bottom" constant="10" id="RqK-bY-WVB"/>
                                             <constraint firstItem="rCd-iy-KgS" firstAttribute="centerY" secondItem="G1g-YR-SgY" secondAttribute="centerY" id="VLP-ba-qQs"/>
-                                            <constraint firstItem="rCd-iy-KgS" firstAttribute="leading" secondItem="G1g-YR-SgY" secondAttribute="trailing" constant="5" id="XAA-QO-fUJ"/>
+                                            <constraint firstItem="rCd-iy-KgS" firstAttribute="leading" secondItem="G1g-YR-SgY" secondAttribute="trailing" id="XAA-QO-fUJ"/>
                                             <constraint firstAttribute="bottom" secondItem="rjw-PQ-kIi" secondAttribute="bottom" constant="10" id="cY2-VT-TSd"/>
-                                            <constraint firstItem="S0O-W9-3la" firstAttribute="leading" secondItem="SJ7-PR-7fP" secondAttribute="trailing" constant="20" id="cdS-Zv-7p2"/>
-                                            <constraint firstItem="G1g-YR-SgY" firstAttribute="leading" secondItem="ahq-Yv-Rsh" secondAttribute="trailing" constant="20" id="sAA-Lh-wNI"/>
+                                            <constraint firstItem="S0O-W9-3la" firstAttribute="leading" secondItem="SJ7-PR-7fP" secondAttribute="trailing" constant="10" id="cdS-Zv-7p2"/>
+                                            <constraint firstItem="G1g-YR-SgY" firstAttribute="leading" secondItem="ahq-Yv-Rsh" secondAttribute="trailing" constant="5" id="sAA-Lh-wNI"/>
                                             <constraint firstAttribute="height" constant="60" id="wqq-uu-6SM"/>
                                         </constraints>
                                     </view>
@@ -387,10 +409,10 @@
                                     <constraint firstItem="YAA-jd-LrS" firstAttribute="leading" secondItem="j3x-np-4uO" secondAttribute="leading" id="Dwc-mx-0Jy"/>
                                     <constraint firstAttribute="trailing" secondItem="YAA-jd-LrS" secondAttribute="trailing" id="II5-sm-4bV"/>
                                     <constraint firstItem="18m-zq-pMl" firstAttribute="leading" secondItem="j3x-np-4uO" secondAttribute="leading" constant="10" id="NSy-LA-BXP"/>
-                                    <constraint firstItem="d2M-JB-RX2" firstAttribute="top" secondItem="j3x-np-4uO" secondAttribute="top" constant="25" id="RZe-7h-RYv"/>
+                                    <constraint firstItem="d2M-JB-RX2" firstAttribute="top" secondItem="j3x-np-4uO" secondAttribute="top" constant="15" id="RZe-7h-RYv"/>
                                     <constraint firstAttribute="height" constant="250" id="VbB-lY-JuY"/>
                                     <constraint firstAttribute="trailing" secondItem="d2M-JB-RX2" secondAttribute="trailing" constant="10" id="Xw8-Q9-bSc"/>
-                                    <constraint firstItem="18m-zq-pMl" firstAttribute="top" secondItem="j3x-np-4uO" secondAttribute="top" constant="30" id="ajN-Ly-bil"/>
+                                    <constraint firstItem="18m-zq-pMl" firstAttribute="top" secondItem="j3x-np-4uO" secondAttribute="top" constant="20" id="ajN-Ly-bil"/>
                                     <constraint firstItem="d2M-JB-RX2" firstAttribute="leading" secondItem="18m-zq-pMl" secondAttribute="trailing" constant="10" id="cLV-Y7-UYc"/>
                                     <constraint firstAttribute="bottom" secondItem="WkQ-4t-XdR" secondAttribute="bottom" id="cht-Bi-2W7"/>
                                     <constraint firstItem="9R6-FF-wTq" firstAttribute="leading" secondItem="j3x-np-4uO" secondAttribute="leading" id="gCD-ME-ewf"/>
@@ -492,6 +514,7 @@
                         <outlet property="accessLabel" destination="pbY-Tl-Gl3" id="s0i-Kf-wIt"/>
                         <outlet property="accessTextView" destination="A4z-fz-ijH" id="F9d-9R-he4"/>
                         <outlet property="backButton" destination="18m-zq-pMl" id="XTH-Qr-8Qn"/>
+                        <outlet property="bottomGradientView" destination="WkQ-4t-XdR" id="O0N-C3-HPd"/>
                         <outlet property="bottomPanel" destination="L91-PU-Yp3" id="v7s-DI-ovK"/>
                         <outlet property="climbCountImageView" destination="G1g-YR-SgY" id="hek-HQ-vrz"/>
                         <outlet property="climbCountLabel" destination="rCd-iy-KgS" id="0lZ-GH-EW5"/>
@@ -501,16 +524,17 @@
                         <outlet property="descriptionTextView" destination="sMm-H4-kgn" id="Lpx-Wl-N2j"/>
                         <outlet property="driveTimeImageView" destination="azU-rf-lsf" id="GA7-sO-a9u"/>
                         <outlet property="driveTimeLabel" destination="SJ7-PR-7fP" id="gpz-BJ-Ot5"/>
-                        <outlet property="gradientView" destination="WkQ-4t-XdR" id="kRu-a9-NX4"/>
                         <outlet property="gutterPanel" destination="9R6-FF-wTq" id="3j1-z6-F24"/>
                         <outlet property="hikeTimeImageView" destination="S0O-W9-3la" id="NBw-9P-QaQ"/>
                         <outlet property="hikeTimeLabel" destination="ahq-Yv-Rsh" id="PXU-fw-yfc"/>
+                        <outlet property="topGradientView" destination="nlR-Kt-C8C" id="sxJ-7Z-g06"/>
                         <outlet property="topPanel" destination="j3x-np-4uO" id="Zms-mT-MwT"/>
                         <outlet property="weatherImageView" destination="rjw-PQ-kIi" id="07u-fS-2GC"/>
                         <segue destination="xTp-J1-NZk" kind="show" identifier="showClimbListSegue" id="04z-Xv-cmG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYn-Sa-PgK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="irF-6P-5Td" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-1087.2" y="1491.9040479760122"/>
         </scene>
@@ -953,6 +977,7 @@
     <resources>
         <image name="3Star.png" width="240" height="80"/>
         <image name="celestial.jpg" width="480" height="320"/>
+        <image name="climbCountIcon.png" width="80" height="80"/>
         <image name="driveIcon.png" width="80" height="80"/>
         <image name="flinders.jpg" width="1024" height="683"/>
         <image name="frog.jpg" width="900" height="599"/>
