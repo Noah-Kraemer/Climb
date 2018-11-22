@@ -38,7 +38,7 @@ class DismissClimbListTransition: UIPercentDrivenInteractiveTransition {
             interactionInProgress = true
             viewController.dismiss(animated: true, completion: nil)
         case .changed:
-            shouldCompleteTransition = progress > 0.5 || velocity.x > 500
+            shouldCompleteTransition = progress > 0.5 || velocity.x > 0
             update(progress)
         case .cancelled:
             interactionInProgress = false

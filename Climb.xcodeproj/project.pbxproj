@@ -53,6 +53,7 @@
 		D94FC6B0219EB8A100E0884F /* CragModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94FC6AF219EB8A100E0884F /* CragModel.swift */; };
 		D94FC6B221A0DF7500E0884F /* MockCragData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94FC6B121A0DF7500E0884F /* MockCragData.swift */; };
 		D94FC6B521A1022200E0884F /* ExpandCragDetailSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94FC6B421A1022200E0884F /* ExpandCragDetailSegue.swift */; };
+		D95926B221A63F9500C90077 /* ShowCragListViewSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95926B121A63F9500C90077 /* ShowCragListViewSegue.swift */; };
 		D98DBC0621996F55004B7577 /* CragListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DBC0521996F55004B7577 /* CragListViewController.swift */; };
 		D98DBC0921997C9D004B7577 /* ClimbListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DBC0821997C9D004B7577 /* ClimbListViewController.swift */; };
 		D98DBC0B2199B5DC004B7577 /* ClimbListBulletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98DBC0A2199B5DC004B7577 /* ClimbListBulletView.swift */; };
@@ -128,6 +129,7 @@
 		D94FC6AF219EB8A100E0884F /* CragModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CragModel.swift; sourceTree = "<group>"; };
 		D94FC6B121A0DF7500E0884F /* MockCragData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCragData.swift; sourceTree = "<group>"; };
 		D94FC6B421A1022200E0884F /* ExpandCragDetailSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandCragDetailSegue.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		D95926B121A63F9500C90077 /* ShowCragListViewSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCragListViewSegue.swift; sourceTree = "<group>"; };
 		D98DBC0521996F55004B7577 /* CragListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CragListViewController.swift; sourceTree = "<group>"; };
 		D98DBC0821997C9D004B7577 /* ClimbListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbListViewController.swift; sourceTree = "<group>"; };
 		D98DBC0A2199B5DC004B7577 /* ClimbListBulletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbListBulletView.swift; sourceTree = "<group>"; };
@@ -347,6 +349,7 @@
 				D915359D21A2D36E00C90981 /* ShowClimbListAnimationController.swift */,
 				D915359F21A2DDE200C90981 /* ShowClimbListTransition.swift */,
 				D91535A121A3929300C90981 /* CollapseCragDetailSegue.swift */,
+				D95926B121A63F9500C90077 /* ShowCragListViewSegue.swift */,
 			);
 			path = Segues;
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				4F66DF31216980A50089AFE4 /* SplashScreenViewController.swift in Sources */,
 				D94FC6B221A0DF7500E0884F /* MockCragData.swift in Sources */,
 				D915359E21A2D36E00C90981 /* ShowClimbListAnimationController.swift in Sources */,
+				D95926B221A63F9500C90077 /* ShowCragListViewSegue.swift in Sources */,
 				D98DBC0621996F55004B7577 /* CragListViewController.swift in Sources */,
 				4FCC1F8A21605CC6001B63ED /* ClimbPageContentController.swift in Sources */,
 				4F66DF412169FBFE0089AFE4 /* CragPageViewController.swift in Sources */,

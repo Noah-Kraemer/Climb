@@ -38,7 +38,7 @@ class ShowClimbListTransition: UIPercentDrivenInteractiveTransition {
             interactionInProgress = true
             viewController.performSegue(withIdentifier: "showClimbListSegue", sender: nil)
         case .changed:
-            shouldCompleteTransition = progress > 0.5 || -velocity.x > 500
+            shouldCompleteTransition = progress > 0.5 || -velocity.x > 0
             update(progress)
         case .cancelled:
             interactionInProgress = false

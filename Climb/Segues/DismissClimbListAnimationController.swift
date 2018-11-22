@@ -34,7 +34,10 @@ class DismissClimbListAnimationController: NSObject, UIViewControllerAnimatedTra
         
         let duration = transitionDuration(using: transitionContext)
         
-        UIView.animate(withDuration: duration, animations: {
+        UIView.animate(withDuration: duration,
+                       delay: 0,
+                       options: .curveLinear,
+                       animations: {
             source!.view.frame = CGRect(x: screenWidth, y: 0, width: screenWidth, height: screenHeight)
             destination!.view.frame = CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight)
         }, completion: { _ in

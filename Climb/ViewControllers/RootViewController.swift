@@ -11,11 +11,9 @@ import UIKit
 class RootViewController: UIViewController {
     
     var splashViewController: SplashScreenViewController?
-    var cragListViewController: CragListViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         showSplashViewController()
     }
     
@@ -33,15 +31,6 @@ class RootViewController: UIViewController {
         splashViewController?.view.removeFromSuperview()
         splashViewController?.removeFromParent()
         
-        showCragListViewController()
-    }
-    
-    func showCragListViewController() {
-        cragListViewController = self.storyboard?.instantiateViewController(withIdentifier: "CragListViewController") as! CragListViewController
-        
-        cragListViewController?.willMove(toParent: self)
-        self.addChild(cragListViewController!)
-        self.view.addSubview(cragListViewController!.view)
-        cragListViewController?.didMove(toParent: self)
+        performSegue(withIdentifier: "showCragListViewSegue", sender: self)
     }
 }
