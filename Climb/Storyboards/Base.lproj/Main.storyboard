@@ -74,101 +74,13 @@
             </objects>
             <point key="canvasLocation" x="-2591" y="2167"/>
         </scene>
-        <!--Crag Page View Controller-->
-        <scene sceneID="0rt-Ua-eVg">
-            <objects>
-                <pageViewController storyboardIdentifier="CragPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="iwu-KD-gix" customClass="CragPageViewController" customModule="Climb" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iYN-w0-isH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1365" y="-77"/>
-        </scene>
-        <!--Page View Controller-->
-        <scene sceneID="FAl-1Y-YNQ">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="85W-1A-eMy" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GKY-85-ySZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-590" y="-72"/>
-        </scene>
         <!--Climb Page View Controller-->
         <scene sceneID="Woj-Pg-Qm6">
             <objects>
                 <pageViewController storyboardIdentifier="ClimbPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="4" navigationOrientation="horizontal" spineLocation="none" id="oUN-o0-Tzq" customClass="ClimbPageViewController" customModule="Climb" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ro-gk-flD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="529" y="806"/>
-        </scene>
-        <!--Crag Page Content Controller-->
-        <scene sceneID="jt0-Ni-SHf">
-            <objects>
-                <viewController storyboardIdentifier="CragPageContentController" id="1lj-0E-xrB" customClass="CragPageContentController" customModule="Climb" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1HG-iD-nsi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3H-dS-nSM">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flinders.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cuy-Mh-Yc5">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="683"/>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6a-eH-kUQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="20"/>
-                                        <color key="backgroundColor" red="0.0" green="0.18823529410000001" blue="0.28627450980000002" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="hpj-tX-ZMz"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="cuy-Mh-Yc5" firstAttribute="top" secondItem="g3H-dS-nSM" secondAttribute="top" id="1Wi-xz-Z2X"/>
-                                    <constraint firstAttribute="trailing" secondItem="r6a-eH-kUQ" secondAttribute="trailing" id="BsK-Ua-SKH"/>
-                                    <constraint firstItem="r6a-eH-kUQ" firstAttribute="leading" secondItem="g3H-dS-nSM" secondAttribute="leading" id="KIJ-vI-ehl"/>
-                                    <constraint firstItem="r6a-eH-kUQ" firstAttribute="top" secondItem="g3H-dS-nSM" secondAttribute="top" id="Pmt-am-ezY"/>
-                                    <constraint firstAttribute="bottom" secondItem="cuy-Mh-Yc5" secondAttribute="bottom" id="bLp-Zi-Yda"/>
-                                    <constraint firstItem="cuy-Mh-Yc5" firstAttribute="leading" secondItem="g3H-dS-nSM" secondAttribute="leading" id="qZ4-Pa-MZI"/>
-                                    <constraint firstAttribute="trailing" secondItem="cuy-Mh-Yc5" secondAttribute="trailing" id="yd3-JZ-RKu"/>
-                                </constraints>
-                            </scrollView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flinders Cave" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaV-K6-qPL">
-                                <rect key="frame" x="0.0" y="497.5" width="360" height="169.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="70"/>
-                                <color key="textColor" red="0.91764705879999997" green="0.8862745098" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="2" height="2"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.18823529410000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <gestureRecognizers/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="g3H-dS-nSM" secondAttribute="trailing" id="FTi-sM-xdd"/>
-                            <constraint firstItem="g3H-dS-nSM" firstAttribute="leading" secondItem="1HG-iD-nsi" secondAttribute="leading" id="HXJ-XZ-fIY"/>
-                            <constraint firstItem="FZ6-HW-nqm" firstAttribute="trailing" secondItem="AaV-K6-qPL" secondAttribute="trailing" constant="15" id="Lca-Zn-a0y"/>
-                            <constraint firstItem="FZ6-HW-nqm" firstAttribute="bottom" secondItem="AaV-K6-qPL" secondAttribute="bottom" id="WMp-7B-OPD"/>
-                            <constraint firstItem="AaV-K6-qPL" firstAttribute="leading" secondItem="FZ6-HW-nqm" secondAttribute="leading" id="b7b-B0-C4y"/>
-                            <constraint firstAttribute="bottom" secondItem="g3H-dS-nSM" secondAttribute="bottom" id="dAZ-D1-wat"/>
-                            <constraint firstItem="g3H-dS-nSM" firstAttribute="top" secondItem="1HG-iD-nsi" secondAttribute="top" id="tf4-hr-bre"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="FZ6-HW-nqm"/>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="an5-GP-yxE" appends="YES" id="jEq-nV-G9R"/>
-                        </connections>
-                    </view>
-                    <connections>
-                        <outlet property="cragImageScrollView" destination="g3H-dS-nSM" id="3tG-Ms-Tgr"/>
-                        <outlet property="cragImageView" destination="cuy-Mh-Yc5" id="9NS-uK-2yO"/>
-                        <outlet property="nameLabel" destination="AaV-K6-qPL" id="h0k-XB-F0d"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fdw-SB-yO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="up" id="an5-GP-yxE">
-                    <connections>
-                        <action selector="handleSwipeUp:" destination="1lj-0E-xrB" id="INo-Cg-h53"/>
-                    </connections>
-                </swipeGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="-1360.8" y="636.4317841079461"/>
+            <point key="canvasLocation" x="422" y="806"/>
         </scene>
         <!--Crag List View Controller-->
         <scene sceneID="nPA-zF-cvn">
@@ -541,60 +453,6 @@
             </objects>
             <point key="canvasLocation" x="-1087.2" y="1491.9040479760122"/>
         </scene>
-        <!--Area Page Content Controller-->
-        <scene sceneID="9HC-OZ-b9C">
-            <objects>
-                <viewController storyboardIdentifier="AreaPageContentController" id="cbI-eT-uK1" customClass="AreaPageContentController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GWr-UF-WM9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="celestial.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bhO-l6-hmj">
-                                <rect key="frame" x="0.0" y="20" width="375" height="202.5"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MB6-fm-Vbn" customClass="GradientView" customModule="Climb" customModuleProvider="target">
-                                <rect key="frame" x="18" y="298" width="378" height="2"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="T08-NM-1UX"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="startLocation">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="endLocation">
-                                        <real key="value" value="0.75"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="edgeColor">
-                                        <color key="value" red="0.0" green="0.18823529410000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="centerColor">
-                                        <color key="value" red="0.91764705879999997" green="0.8862745098" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Celestial Wall" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urX-8G-jrF">
-                                <rect key="frame" x="98" y="241" width="178" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <color key="textColor" red="0.98823529409999999" green="0.74901960779999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.18823529410000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="pHY-PL-fWi" firstAttribute="bottom" secondItem="bhO-l6-hmj" secondAttribute="bottom" multiplier="3:1" id="AD9-JW-SkE"/>
-                            <constraint firstItem="bhO-l6-hmj" firstAttribute="leading" secondItem="pHY-PL-fWi" secondAttribute="leading" id="BPQ-bm-HZW"/>
-                            <constraint firstItem="bhO-l6-hmj" firstAttribute="top" secondItem="pHY-PL-fWi" secondAttribute="top" id="Xwy-2B-Geb"/>
-                            <constraint firstItem="bhO-l6-hmj" firstAttribute="trailing" secondItem="pHY-PL-fWi" secondAttribute="trailing" id="sj6-0A-ttN"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="pHY-PL-fWi"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="959-I2-bO4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-601.44927536231887" y="632.60869565217399"/>
-        </scene>
         <!--Climb Page Content Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -815,7 +673,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="530" y="1492"/>
+            <point key="canvasLocation" x="422" y="1492"/>
         </scene>
         <!--Climb List View Controller-->
         <scene sceneID="POD-n5-PR9">
@@ -827,7 +685,7 @@
                         <color key="backgroundColor" red="0.0" green="0.18823529410000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ClimbTableViewAreaCell" rowHeight="100" id="hvd-1o-RTh" customClass="ClimbTableViewAreaCell" customModule="Climb" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ClimbTableViewAreaCell" rowHeight="100" id="hvd-1o-RTh" customClass="ClimbTableViewAreaCell" customModule="Climb" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hvd-1o-RTh" id="y4i-Mo-yn1">
@@ -908,7 +766,7 @@
                                     <outlet property="weatherImageView" destination="lwV-59-WsT" id="vYi-BB-vG6"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ClimbTableViewClimbCell" rowHeight="50" id="OTf-eZ-0PD" customClass="ClimbTableViewClimbCell" customModule="Climb" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ClimbTableViewClimbCell" rowHeight="50" id="OTf-eZ-0PD" customClass="ClimbTableViewClimbCell" customModule="Climb" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="128" width="375" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OTf-eZ-0PD" id="omn-qS-BJr">
@@ -956,6 +814,7 @@
                                     <outlet property="climbNameLabel" destination="tN1-LO-NGM" id="aBz-p4-6Xf"/>
                                     <outlet property="gradeLabel" destination="MEo-sD-ptc" id="zzg-YZ-aTV"/>
                                     <outlet property="styleImageView" destination="YPG-P1-PYL" id="N6o-eR-HAT"/>
+                                    <segue destination="oUN-o0-Tzq" kind="show" id="5r6-kE-6f2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -979,7 +838,6 @@
     </scenes>
     <resources>
         <image name="3Star.png" width="240" height="80"/>
-        <image name="celestial.jpg" width="480" height="320"/>
         <image name="climbCountIcon.png" width="80" height="80"/>
         <image name="driveIcon.png" width="80" height="80"/>
         <image name="flinders.jpg" width="1024" height="683"/>

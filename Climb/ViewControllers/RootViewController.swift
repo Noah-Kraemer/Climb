@@ -18,7 +18,7 @@ class RootViewController: UIViewController {
     }
     
     func showSplashViewController() {
-        splashViewController = self.storyboard?.instantiateViewController(withIdentifier: "SplashScreenViewController") as! SplashScreenViewController
+        splashViewController = self.storyboard?.instantiateViewController(withIdentifier: "SplashScreenViewController") as? SplashScreenViewController
         
         splashViewController?.willMove(toParent: self)
         self.addChild(splashViewController!)
