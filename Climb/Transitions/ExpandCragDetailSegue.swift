@@ -44,8 +44,8 @@ class ExpandCragDetailSegue: UIStoryboardSegue {
 
         // Access the app's key window and insert the destination view behind the current (source) one.
         let window = UIApplication.shared.keyWindow
-        window?.insertSubview(detailViewController.view, belowSubview: listViewController.view)
-        detailViewController.view.frame = CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight)
+        window?.addSubview(detailViewController.view)
+        window?.addSubview(listViewController.view)
         
         // Create gradient view to emulate crag cell gradient
         let tempGradientView = GradientView()
@@ -83,7 +83,6 @@ class ExpandCragDetailSegue: UIStoryboardSegue {
         detailViewController.backButton.frame = detailViewController.backButton.frame.offsetBy(dx: 0, dy: 170)
         
         // Bring relevant views to front
-        window?.bringSubviewToFront(listViewController.view)
         detailViewController.topPanel.bringSubviewToFront(detailViewController.cragTitleLabel)
         
         selectedCell.isHidden = true

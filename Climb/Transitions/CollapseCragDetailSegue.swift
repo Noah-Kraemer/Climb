@@ -45,7 +45,6 @@ class CollapseCragDetailSegue: UIStoryboardSegue {
         // Access the app's key window and insert the destination view behind the current (source) one.
         let window = UIApplication.shared.keyWindow
         window?.insertSubview(listViewController.view, aboveSubview: detailViewController.view)
-        listViewController.view.frame = CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight)
         
         // Create gradient view to emulate crag cell gradient
         let tempGradientView = GradientView()
