@@ -167,8 +167,10 @@
 				4F66DF30216980A50089AFE4 /* SplashScreenViewController.swift */,
 				D98DBC0721997099004B7577 /* Legacy */,
 				D98DBC0521996F55004B7577 /* CragListViewController.swift */,
-				D98DBC0821997C9D004B7577 /* ClimbListViewController.swift */,
 				D94FC6AD219EB69B00E0884F /* CragDetailViewController.swift */,
+				D98DBC0821997C9D004B7577 /* ClimbListViewController.swift */,
+				4F5D5ADD2164E4B9001D8A07 /* ClimbPageViewController.swift */,
+				4FCC1F8921605CC6001B63ED /* ClimbPageContentController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -243,7 +245,7 @@
 		4FCC1F8621605CC6001B63ED /* Climb */ = {
 			isa = PBXGroup;
 			children = (
-				D94FC6B321A1020300E0884F /* Segues */,
+				D94FC6B321A1020300E0884F /* Transitions */,
 				4F5D5ACE2161DD47001D8A07 /* Storyboards */,
 				4F5D5ACB2161DD06001D8A07 /* ViewControllers */,
 				4F5D5AD32161FF6A001D8A07 /* Views */,
@@ -340,7 +342,7 @@
 			path = Icons;
 			sourceTree = "<group>";
 		};
-		D94FC6B321A1020300E0884F /* Segues */ = {
+		D94FC6B321A1020300E0884F /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
 				D94FC6B421A1022200E0884F /* ExpandCragDetailSegue.swift */,
@@ -351,7 +353,7 @@
 				D91535A121A3929300C90981 /* CollapseCragDetailSegue.swift */,
 				D95926B121A63F9500C90077 /* ShowCragListViewSegue.swift */,
 			);
-			path = Segues;
+			path = Transitions;
 			sourceTree = "<group>";
 		};
 		D98DBC0721997099004B7577 /* Legacy */ = {
@@ -360,8 +362,6 @@
 				4F66DF402169FBFE0089AFE4 /* CragPageViewController.swift */,
 				4F66DF362169F1DC0089AFE4 /* CragPageContentController.swift */,
 				4FFC43E62167ACD5005D3384 /* AreaPageContentController.swift */,
-				4F5D5ADD2164E4B9001D8A07 /* ClimbPageViewController.swift */,
-				4FCC1F8921605CC6001B63ED /* ClimbPageContentController.swift */,
 			);
 			path = Legacy;
 			sourceTree = "<group>";
