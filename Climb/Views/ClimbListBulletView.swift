@@ -64,7 +64,7 @@ class ClimbListBulletView: UIView {
         layer.addSublayer(bottomLineLayer)
         layer.addSublayer(circleLayer)
         
-        self.backgroundColor = PalleteDarkBlue
+        self.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0)
     }
     
     func refresh() {
