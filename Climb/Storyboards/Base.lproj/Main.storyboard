@@ -341,43 +341,39 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L91-PU-Yp3">
                                 <rect key="frame" x="0.0" y="250" width="375" height="417"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbY-Tl-Gl3">
-                                        <rect key="frame" x="18" y="10" width="339" height="25"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="Iin-9s-BdU"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="N2I-MH-wci"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" red="0.98823529409999999" green="0.74901960779999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQc-Vz-SzT">
-                                        <rect key="frame" x="18" y="263" width="339" height="25"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="Brm-zj-LCQ"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <color key="textColor" red="0.98823529409999999" green="0.74901960779999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMm-H4-kgn">
-                                        <rect key="frame" x="18" y="306" width="339" height="50"/>
+                                        <rect key="frame" x="18" y="356" width="339" height="0.0"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="WgM-YF-XZM"/>
+                                            <constraint firstAttribute="height" id="WgM-YF-XZM"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="XZd-ee-4EQ"/>
                                         </constraints>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="XZd-ee-4EQ"/>
+                                            </mask>
+                                        </variation>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4z-fz-ijH">
-                                        <rect key="frame" x="18" y="47" width="339" height="198"/>
+                                        <rect key="frame" x="18" y="36" width="339" height="259"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <constraints>
+                                            <constraint firstAttribute="height" id="Wce-DN-xYR"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Ydm-IR-rEp"/>
+                                        </constraints>
+                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Wce-DN-xYR"/>
+                                            </mask>
+                                        </variation>
                                     </textView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe left to view areas" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9K-Bz-0CC">
                                         <rect key="frame" x="18" y="374" width="339" height="25"/>
@@ -389,23 +385,48 @@
                                         <color key="textColor" red="0.98823529409999999" green="0.74901960779999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tS-ET-puZ">
+                                        <rect key="frame" x="18" y="6" width="339" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Hhw-md-U9C"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Access">
+                                            <color key="titleColor" red="0.98823529409999999" green="0.74901960779999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toggleAccessExpanded:" destination="tuP-ri-sBx" eventType="touchUpInside" id="B6W-Fa-yi8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yE6-VQ-ga7">
+                                        <rect key="frame" x="18" y="313" width="339" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="M1b-Qj-eCM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Description">
+                                            <color key="titleColor" red="0.98823529409999999" green="0.74901960779999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="toggleAccessExpanded:" destination="tuP-ri-sBx" eventType="touchUpInside" id="o32-Ts-qQe"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="pbY-Tl-Gl3" firstAttribute="leading" secondItem="L91-PU-Yp3" secondAttribute="leading" constant="18" id="3jN-iu-xwF"/>
                                     <constraint firstItem="sMm-H4-kgn" firstAttribute="leading" secondItem="L91-PU-Yp3" secondAttribute="leading" constant="18" id="5TX-3g-W5h"/>
-                                    <constraint firstItem="tQc-Vz-SzT" firstAttribute="leading" secondItem="L91-PU-Yp3" secondAttribute="leading" constant="18" id="8X5-nD-PO7"/>
+                                    <constraint firstItem="yE6-VQ-ga7" firstAttribute="top" secondItem="A4z-fz-ijH" secondAttribute="bottom" constant="18" id="88X-9s-uJA"/>
                                     <constraint firstItem="r9K-Bz-0CC" firstAttribute="leading" secondItem="L91-PU-Yp3" secondAttribute="leading" constant="18" id="8lL-MC-8do"/>
-                                    <constraint firstItem="tQc-Vz-SzT" firstAttribute="top" secondItem="A4z-fz-ijH" secondAttribute="bottom" constant="18" id="BMt-zU-Ydr"/>
-                                    <constraint firstItem="pbY-Tl-Gl3" firstAttribute="top" secondItem="L91-PU-Yp3" secondAttribute="top" constant="10" id="D5O-f6-Qmb"/>
+                                    <constraint firstItem="sMm-H4-kgn" firstAttribute="top" secondItem="yE6-VQ-ga7" secondAttribute="bottom" constant="18" id="Mcw-bu-Ve5"/>
                                     <constraint firstItem="r9K-Bz-0CC" firstAttribute="top" secondItem="sMm-H4-kgn" secondAttribute="bottom" constant="18" id="Ral-Wq-Hw5"/>
+                                    <constraint firstAttribute="trailing" secondItem="yE6-VQ-ga7" secondAttribute="trailing" constant="18" id="SMq-Lv-fBE"/>
+                                    <constraint firstItem="A4z-fz-ijH" firstAttribute="top" secondItem="0tS-ET-puZ" secondAttribute="bottom" constant="5" id="UJ3-VD-I5p"/>
                                     <constraint firstAttribute="trailing" secondItem="sMm-H4-kgn" secondAttribute="trailing" constant="18" id="a2c-9N-019"/>
-                                    <constraint firstItem="sMm-H4-kgn" firstAttribute="top" secondItem="tQc-Vz-SzT" secondAttribute="bottom" constant="18" id="bqw-RU-vji"/>
-                                    <constraint firstItem="A4z-fz-ijH" firstAttribute="top" secondItem="pbY-Tl-Gl3" secondAttribute="bottom" constant="12" id="euh-zp-N3n"/>
                                     <constraint firstAttribute="bottom" secondItem="r9K-Bz-0CC" secondAttribute="bottom" constant="18" id="fRe-p1-eGg"/>
-                                    <constraint firstAttribute="trailing" secondItem="tQc-Vz-SzT" secondAttribute="trailing" constant="18" id="kCy-uz-WxJ"/>
-                                    <constraint firstAttribute="trailing" secondItem="pbY-Tl-Gl3" secondAttribute="trailing" constant="18" id="kyG-mj-Ts8"/>
-                                    <constraint firstItem="sMm-H4-kgn" firstAttribute="top" secondItem="tQc-Vz-SzT" secondAttribute="bottom" constant="18" id="qoJ-bm-lZz"/>
+                                    <constraint firstItem="0tS-ET-puZ" firstAttribute="top" secondItem="L91-PU-Yp3" secondAttribute="top" constant="6" id="hwz-2y-EU9"/>
+                                    <constraint firstItem="yE6-VQ-ga7" firstAttribute="leading" secondItem="L91-PU-Yp3" secondAttribute="leading" constant="18" id="r6M-SD-QNz"/>
+                                    <constraint firstAttribute="trailing" secondItem="0tS-ET-puZ" secondAttribute="trailing" constant="18" id="stH-MR-mal"/>
+                                    <constraint firstItem="0tS-ET-puZ" firstAttribute="leading" secondItem="L91-PU-Yp3" secondAttribute="leading" constant="18" id="tIv-hb-zcM"/>
                                     <constraint firstAttribute="trailing" secondItem="r9K-Bz-0CC" secondAttribute="trailing" constant="18" id="x25-5z-unX"/>
                                     <constraint firstItem="A4z-fz-ijH" firstAttribute="leading" secondItem="L91-PU-Yp3" secondAttribute="leading" constant="18" id="zNO-hs-w6p"/>
                                     <constraint firstAttribute="trailing" secondItem="A4z-fz-ijH" secondAttribute="trailing" constant="18" id="zbv-CF-hEw"/>
@@ -426,7 +447,7 @@
                         <viewLayoutGuide key="safeArea" id="0a0-OX-CJy"/>
                     </view>
                     <connections>
-                        <outlet property="accessLabel" destination="pbY-Tl-Gl3" id="s0i-Kf-wIt"/>
+                        <outlet property="accessButton" destination="0tS-ET-puZ" id="o0Q-Wa-CYy"/>
                         <outlet property="accessTextView" destination="A4z-fz-ijH" id="F9d-9R-he4"/>
                         <outlet property="backButton" destination="18m-zq-pMl" id="XTH-Qr-8Qn"/>
                         <outlet property="bottomGradientView" destination="WkQ-4t-XdR" id="O0N-C3-HPd"/>
@@ -435,13 +456,17 @@
                         <outlet property="climbCountLabel" destination="rCd-iy-KgS" id="0lZ-GH-EW5"/>
                         <outlet property="cragImageView" destination="YAA-jd-LrS" id="p4w-Yp-wdQ"/>
                         <outlet property="cragTitleLabel" destination="d2M-JB-RX2" id="EL8-Wy-pbg"/>
-                        <outlet property="descriptionLabel" destination="tQc-Vz-SzT" id="R3R-rR-gV5"/>
+                        <outlet property="descriptionButton" destination="yE6-VQ-ga7" id="3I0-U8-CVj"/>
                         <outlet property="descriptionTextView" destination="sMm-H4-kgn" id="Lpx-Wl-N2j"/>
                         <outlet property="driveTimeImageView" destination="azU-rf-lsf" id="GA7-sO-a9u"/>
                         <outlet property="driveTimeLabel" destination="SJ7-PR-7fP" id="gpz-BJ-Ot5"/>
                         <outlet property="gutterPanel" destination="9R6-FF-wTq" id="3j1-z6-F24"/>
+                        <outlet property="hideAccessHeightConstraint" destination="Wce-DN-xYR" id="fI1-U1-1o4"/>
+                        <outlet property="hideDescriptionHeightConstraint" destination="WgM-YF-XZM" id="8oF-Zl-YQu"/>
                         <outlet property="hikeTimeImageView" destination="S0O-W9-3la" id="NBw-9P-QaQ"/>
                         <outlet property="hikeTimeLabel" destination="ahq-Yv-Rsh" id="PXU-fw-yfc"/>
+                        <outlet property="showAccessHeightConstraint" destination="Ydm-IR-rEp" id="a9W-hg-Peo"/>
+                        <outlet property="showDescriptionHeightConstraint" destination="XZd-ee-4EQ" id="bh2-RK-oPu"/>
                         <outlet property="topGradientView" destination="nlR-Kt-C8C" id="sxJ-7Z-g06"/>
                         <outlet property="topPanel" destination="j3x-np-4uO" id="Zms-mT-MwT"/>
                         <outlet property="weatherImageView" destination="rjw-PQ-kIi" id="07u-fS-2GC"/>

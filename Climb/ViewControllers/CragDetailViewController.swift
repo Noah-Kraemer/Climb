@@ -27,16 +27,24 @@ class CragDetailViewController: UIViewController {
     @IBOutlet weak var driveTimeLabel: UILabel!
     @IBOutlet weak var hikeTimeLabel: UILabel!
     @IBOutlet weak var climbCountLabel: UILabel!
-    @IBOutlet weak var accessLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
     
     //TextViews
     @IBOutlet weak var accessTextView: UITextView!
     @IBOutlet weak var descriptionTextView: UITextView!
     
+    //Buttons
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var accessButton: UIButton!
+    @IBOutlet weak var descriptionButton: UIButton!
+    
+    //Constraints
+    @IBOutlet weak var showAccessHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var hideAccessHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var showDescriptionHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var hideDescriptionHeightConstraint: NSLayoutConstraint!
+    
     @IBOutlet weak var topGradientView: GradientView!
     @IBOutlet weak var bottomGradientView: GradientView!
-    @IBOutlet weak var backButton: UIButton!
     
     var crag: CragModel?
     var indexPath: IndexPath?
@@ -57,15 +65,25 @@ class CragDetailViewController: UIViewController {
         hikeTimeLabel.text = crag!.hikeTime
         //climbCountLabel.text =
         
-        accessLabel.text = "Access"
-        descriptionLabel.text = "Description"
-        
         accessTextView.text = crag?.accessText
         descriptionTextView.text = crag?.descriptionText
         
         bottomGradientView.fadeDirection = .vertical
         
         showClimbListTransition = ShowClimbListTransition(viewController: self)
+    }
+    
+    @IBAction func toggleAccessExpanded(_ sender: UIButton) {
+        accessExpanded = !accessExpanded
+        
+        //TODO animate
+        if (accessExpanded) {
+            NSLayoutConstraint.deactivate([hideAccessHeightConstraint, showDescriptionHeightConstraint])
+            NSLayoutConstraint.activate([showAccessHeightConstraint, hideDescriptionHeightConstraint])
+        } else {
+            NSLayoutConstraint.deactivate([showAccessHeightConstraint, hideDescriptionHeightConstraint])
+            NSLayoutConstraint.activate([hideAccessHeightConstraint, showDescriptionHeightConstraint])
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
