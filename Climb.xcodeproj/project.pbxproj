@@ -80,7 +80,7 @@
 		4F5D5ADD2164E4B9001D8A07 /* ClimbPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbPageViewController.swift; sourceTree = "<group>"; };
 		4F5D5ADF2164EA9D001D8A07 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		4F5D5AE12164FB15001D8A07 /* overlay_tote.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = overlay_tote.jpg; sourceTree = "<group>"; };
-		4F5D5AE32164FEA0001D8A07 /* pitches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pitches.png; sourceTree = "<group>"; };
+		4F5D5AE32164FEA0001D8A07 /* pitches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pitches.png; path = ../Icons/pitches.png; sourceTree = "<group>"; };
 		4F66DF30216980A50089AFE4 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		4F66DF322169821D0089AFE4 /* AnimatedLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedLogoView.swift; sourceTree = "<group>"; };
 		4F66DF34216986B50089AFE4 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -101,24 +101,24 @@
 		4FCC1FA621605CC8001B63ED /* ClimbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClimbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCC1FAA21605CC8001B63ED /* ClimbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbUITests.swift; sourceTree = "<group>"; };
 		4FCC1FAC21605CC8001B63ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4FCC1FBB2160685E001B63ED /* sport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sport.png; sourceTree = "<group>"; };
+		4FCC1FBB2160685E001B63ED /* sport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sport.png; path = ../Icons/sport.png; sourceTree = "<group>"; };
 		4FCC1FBD2160701C001B63ED /* tote.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tote.jpg; sourceTree = "<group>"; };
 		4FCC1FBF216072C8001B63ED /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		4FFA882F21718E3500429F84 /* trad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trad.png; sourceTree = "<group>"; };
-		4FFA883121719F8B00429F84 /* 3Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3Star.png; sourceTree = "<group>"; };
-		4FFA88372171A43500429F84 /* 2Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2Star.png; sourceTree = "<group>"; };
-		4FFA88382171A43500429F84 /* 1Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1Star.png; sourceTree = "<group>"; };
+		4FFA882F21718E3500429F84 /* trad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trad.png; path = ../Icons/trad.png; sourceTree = "<group>"; };
+		4FFA883121719F8B00429F84 /* 3Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3Star.png; path = ../Icons/3Star.png; sourceTree = "<group>"; };
+		4FFA88372171A43500429F84 /* 2Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2Star.png; path = ../Icons/2Star.png; sourceTree = "<group>"; };
+		4FFA88382171A43500429F84 /* 1Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1Star.png; path = ../Icons/1Star.png; sourceTree = "<group>"; };
 		4FFA883B2171A47300429F84 /* MockClimbData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockClimbData.swift; sourceTree = "<group>"; };
 		4FFC43E82167AE6B005D3384 /* celestial.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = celestial.jpg; sourceTree = "<group>"; };
-		D915358D21A274A800C90981 /* driveIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = driveIcon.png; path = ../../../../../Downloads/driveIcon.png; sourceTree = "<group>"; };
-		D915359321A2767400C90981 /* listIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = listIcon.png; path = ../../../../../Downloads/listIcon.png; sourceTree = "<group>"; };
-		D915359521A2C2E500C90981 /* hikeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hikeIcon.png; path = ../../../../../Downloads/hikeIcon.png; sourceTree = "<group>"; };
+		D915358D21A274A800C90981 /* driveIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = driveIcon.png; path = ../Icons/driveIcon.png; sourceTree = "<group>"; };
+		D915359321A2767400C90981 /* listIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = listIcon.png; path = ../Icons/listIcon.png; sourceTree = "<group>"; };
+		D915359521A2C2E500C90981 /* hikeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hikeIcon.png; path = ../Icons/hikeIcon.png; sourceTree = "<group>"; };
 		D915359921A2C62F00C90981 /* DismissClimbListTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissClimbListTransition.swift; sourceTree = "<group>"; };
 		D915359B21A2C88000C90981 /* DismissClimbListAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissClimbListAnimationController.swift; sourceTree = "<group>"; };
 		D915359D21A2D36E00C90981 /* ShowClimbListAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowClimbListAnimationController.swift; sourceTree = "<group>"; };
 		D915359F21A2DDE200C90981 /* ShowClimbListTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowClimbListTransition.swift; sourceTree = "<group>"; };
 		D91535A121A3929300C90981 /* CollapseCragDetailSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapseCragDetailSegue.swift; sourceTree = "<group>"; };
-		D91535A521A394F900C90981 /* climbCountIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = climbCountIcon.png; path = ../../../../../Downloads/climbCountIcon.png; sourceTree = "<group>"; };
+		D91535A521A394F900C90981 /* climbCountIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = climbCountIcon.png; path = ../Icons/climbCountIcon.png; sourceTree = "<group>"; };
 		D94FC6AD219EB69B00E0884F /* CragDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CragDetailViewController.swift; sourceTree = "<group>"; };
 		D94FC6AF219EB8A100E0884F /* CragModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CragModel.swift; sourceTree = "<group>"; };
 		D94FC6B121A0DF7500E0884F /* MockCragData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCragData.swift; sourceTree = "<group>"; };
@@ -332,7 +332,8 @@
 				4F5D5AE32164FEA0001D8A07 /* pitches.png */,
 				4FCC1FBB2160685E001B63ED /* sport.png */,
 			);
-			path = Icons;
+			name = Icons;
+			path = Icons.png;
 			sourceTree = "<group>";
 		};
 		D94FC6B321A1020300E0884F /* Transitions */ = {
