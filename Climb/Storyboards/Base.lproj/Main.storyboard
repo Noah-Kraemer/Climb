@@ -17,6 +17,7 @@
                     <view key="view" contentMode="scaleToFill" id="rnR-58-sX9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.18823529410000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Yzd-CI-0Lk"/>
                     </view>
                     <connections>
@@ -89,7 +90,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="250" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" id="qg4-6a-xEc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.18823529410000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CragTableViewCell" id="aTM-IX-qU4" customClass="CragTableViewCell" customModule="Climb" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="250"/>
@@ -145,6 +146,7 @@
                                         <constraint firstAttribute="trailing" secondItem="bX4-XW-hSB" secondAttribute="trailing" constant="10" id="wjw-bW-Frz"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.0" green="0.18823529410000001" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="backgroundImageView" destination="CCc-7Q-PtH" id="uz4-Wz-ob1"/>
                                     <outlet property="cragNameLabel" destination="bX4-XW-hSB" id="68v-1z-Afj"/>
@@ -365,7 +367,7 @@
                                             <constraint firstAttribute="height" id="Wce-DN-xYR"/>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Ydm-IR-rEp"/>
                                         </constraints>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -386,11 +388,12 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tS-ET-puZ">
-                                        <rect key="frame" x="18" y="6" width="339" height="25"/>
+                                        <rect key="frame" x="18" y="0.0" width="339" height="36"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="Hhw-md-U9C"/>
+                                            <constraint firstAttribute="height" constant="36" id="Hhw-md-U9C"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <inset key="contentEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Access">
                                             <color key="titleColor" red="0.98823529409999999" green="0.74901960779999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -399,11 +402,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yE6-VQ-ga7">
-                                        <rect key="frame" x="18" y="313" width="339" height="25"/>
+                                        <rect key="frame" x="18" y="295" width="339" height="61"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="M1b-Qj-eCM"/>
+                                            <constraint firstAttribute="height" constant="61" id="M1b-Qj-eCM"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <inset key="contentEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Description">
                                             <color key="titleColor" red="0.98823529409999999" green="0.74901960779999999" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -411,22 +415,40 @@
                                             <action selector="toggleAccessExpanded:" destination="tuP-ri-sBx" eventType="touchUpInside" id="o32-Ts-qQe"/>
                                         </connections>
                                     </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carat.png" translatesAutoresizingMaskIntoConstraints="NO" id="I9O-cQ-ceY">
+                                        <rect key="frame" x="18" y="310.5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="IT7-iX-mA3"/>
+                                            <constraint firstAttribute="height" constant="30" id="keF-n2-Wzy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carat.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ie7-0N-sml">
+                                        <rect key="frame" x="18" y="3" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="2L3-M0-73Q"/>
+                                            <constraint firstAttribute="width" constant="30" id="KbX-Wf-B2V"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="sMm-H4-kgn" firstAttribute="leading" secondItem="L91-PU-Yp3" secondAttribute="leading" constant="18" id="5TX-3g-W5h"/>
-                                    <constraint firstItem="yE6-VQ-ga7" firstAttribute="top" secondItem="A4z-fz-ijH" secondAttribute="bottom" constant="18" id="88X-9s-uJA"/>
+                                    <constraint firstItem="yE6-VQ-ga7" firstAttribute="top" secondItem="A4z-fz-ijH" secondAttribute="bottom" id="88X-9s-uJA"/>
                                     <constraint firstItem="r9K-Bz-0CC" firstAttribute="leading" secondItem="L91-PU-Yp3" secondAttribute="leading" constant="18" id="8lL-MC-8do"/>
-                                    <constraint firstItem="sMm-H4-kgn" firstAttribute="top" secondItem="yE6-VQ-ga7" secondAttribute="bottom" constant="18" id="Mcw-bu-Ve5"/>
+                                    <constraint firstItem="Ie7-0N-sml" firstAttribute="centerY" secondItem="0tS-ET-puZ" secondAttribute="centerY" id="CPV-SX-61I"/>
+                                    <constraint firstItem="sMm-H4-kgn" firstAttribute="top" secondItem="yE6-VQ-ga7" secondAttribute="bottom" id="Mcw-bu-Ve5"/>
                                     <constraint firstItem="r9K-Bz-0CC" firstAttribute="top" secondItem="sMm-H4-kgn" secondAttribute="bottom" constant="18" id="Ral-Wq-Hw5"/>
                                     <constraint firstAttribute="trailing" secondItem="yE6-VQ-ga7" secondAttribute="trailing" constant="18" id="SMq-Lv-fBE"/>
-                                    <constraint firstItem="A4z-fz-ijH" firstAttribute="top" secondItem="0tS-ET-puZ" secondAttribute="bottom" constant="5" id="UJ3-VD-I5p"/>
+                                    <constraint firstItem="A4z-fz-ijH" firstAttribute="top" secondItem="0tS-ET-puZ" secondAttribute="bottom" id="UJ3-VD-I5p"/>
                                     <constraint firstAttribute="trailing" secondItem="sMm-H4-kgn" secondAttribute="trailing" constant="18" id="a2c-9N-019"/>
+                                    <constraint firstItem="yE6-VQ-ga7" firstAttribute="leading" secondItem="I9O-cQ-ceY" secondAttribute="leading" id="cAJ-p1-Dhk"/>
                                     <constraint firstAttribute="bottom" secondItem="r9K-Bz-0CC" secondAttribute="bottom" constant="18" id="fRe-p1-eGg"/>
-                                    <constraint firstItem="0tS-ET-puZ" firstAttribute="top" secondItem="L91-PU-Yp3" secondAttribute="top" constant="6" id="hwz-2y-EU9"/>
+                                    <constraint firstItem="0tS-ET-puZ" firstAttribute="top" secondItem="L91-PU-Yp3" secondAttribute="top" id="hwz-2y-EU9"/>
                                     <constraint firstItem="yE6-VQ-ga7" firstAttribute="leading" secondItem="L91-PU-Yp3" secondAttribute="leading" constant="18" id="r6M-SD-QNz"/>
+                                    <constraint firstItem="I9O-cQ-ceY" firstAttribute="centerY" secondItem="yE6-VQ-ga7" secondAttribute="centerY" id="rJu-p5-wME"/>
                                     <constraint firstAttribute="trailing" secondItem="0tS-ET-puZ" secondAttribute="trailing" constant="18" id="stH-MR-mal"/>
                                     <constraint firstItem="0tS-ET-puZ" firstAttribute="leading" secondItem="L91-PU-Yp3" secondAttribute="leading" constant="18" id="tIv-hb-zcM"/>
+                                    <constraint firstItem="Ie7-0N-sml" firstAttribute="leading" secondItem="0tS-ET-puZ" secondAttribute="leading" id="usU-cc-0Qi"/>
                                     <constraint firstAttribute="trailing" secondItem="r9K-Bz-0CC" secondAttribute="trailing" constant="18" id="x25-5z-unX"/>
                                     <constraint firstItem="A4z-fz-ijH" firstAttribute="leading" secondItem="L91-PU-Yp3" secondAttribute="leading" constant="18" id="zNO-hs-w6p"/>
                                     <constraint firstAttribute="trailing" secondItem="A4z-fz-ijH" secondAttribute="trailing" constant="18" id="zbv-CF-hEw"/>
@@ -448,6 +470,7 @@
                     </view>
                     <connections>
                         <outlet property="accessButton" destination="0tS-ET-puZ" id="o0Q-Wa-CYy"/>
+                        <outlet property="accessCaratImageView" destination="Ie7-0N-sml" id="ufD-K3-i2t"/>
                         <outlet property="accessTextView" destination="A4z-fz-ijH" id="F9d-9R-he4"/>
                         <outlet property="backButton" destination="18m-zq-pMl" id="XTH-Qr-8Qn"/>
                         <outlet property="bottomGradientView" destination="WkQ-4t-XdR" id="O0N-C3-HPd"/>
@@ -457,6 +480,7 @@
                         <outlet property="cragImageView" destination="YAA-jd-LrS" id="p4w-Yp-wdQ"/>
                         <outlet property="cragTitleLabel" destination="d2M-JB-RX2" id="EL8-Wy-pbg"/>
                         <outlet property="descriptionButton" destination="yE6-VQ-ga7" id="3I0-U8-CVj"/>
+                        <outlet property="descriptionCaratImageView" destination="I9O-cQ-ceY" id="uVk-vj-DOG"/>
                         <outlet property="descriptionTextView" destination="sMm-H4-kgn" id="Lpx-Wl-N2j"/>
                         <outlet property="driveTimeImageView" destination="azU-rf-lsf" id="GA7-sO-a9u"/>
                         <outlet property="driveTimeLabel" destination="SJ7-PR-7fP" id="gpz-BJ-Ot5"/>
@@ -892,6 +916,7 @@
     </scenes>
     <resources>
         <image name="3Star.png" width="240" height="80"/>
+        <image name="carat.png" width="60" height="60"/>
         <image name="climbCountIcon.png" width="80" height="80"/>
         <image name="driveIcon.png" width="80" height="80"/>
         <image name="flinders.jpg" width="1024" height="683"/>

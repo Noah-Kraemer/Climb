@@ -21,6 +21,8 @@ class CragDetailViewController: UIViewController {
     @IBOutlet weak var hikeTimeImageView: UIImageView!
     @IBOutlet weak var climbCountImageView: UIImageView!
     @IBOutlet weak var weatherImageView: UIImageView!
+    @IBOutlet weak var accessCaratImageView: UIImageView!
+    @IBOutlet weak var descriptionCaratImageView: UIImageView!
     
     //Labels
     @IBOutlet weak var cragTitleLabel: UILabel!
@@ -68,6 +70,9 @@ class CragDetailViewController: UIViewController {
         accessTextView.text = crag?.accessText
         descriptionTextView.text = crag?.descriptionText
         
+        accessCaratImageView.transform = CGAffineTransform(rotationAngle: 0)
+        descriptionCaratImageView.transform = CGAffineTransform(rotationAngle: .pi)
+        
         bottomGradientView.fadeDirection = .vertical
         
         showClimbListTransition = ShowClimbListTransition(viewController: self)
@@ -76,14 +81,39 @@ class CragDetailViewController: UIViewController {
     @IBAction func toggleAccessExpanded(_ sender: UIButton) {
         accessExpanded = !accessExpanded
         
-        //TODO animate
-        if (accessExpanded) {
-            NSLayoutConstraint.deactivate([hideAccessHeightConstraint, showDescriptionHeightConstraint])
-            NSLayoutConstraint.activate([showAccessHeightConstraint, hideDescriptionHeightConstraint])
-        } else {
-            NSLayoutConstraint.deactivate([showAccessHeightConstraint, hideDescriptionHeightConstraint])
-            NSLayoutConstraint.activate([hideAccessHeightConstraint, showDescriptionHeightConstraint])
-        }
+        let accessFrame = accessTextView.frame
+        let descriptionFrame = descriptionTextView.frame
+        
+        let expandedHeight = accessFrame.height > descriptionFrame.height ? accessFrame.height : descriptionFrame.height
+        
+        NSLayoutConstraint.deactivate([self.hideAccessHeightConstraint, self.showDescriptionHeightConstraint, self.showAccessHeightConstraint, self.hideDescriptionHeightConstraint])
+        
+        UIView.animate(withDuration: 0.6, animations: {
+            if (self.accessExpanded) {
+                self.accessCaratImageView.transform = CGAffineTransform(rotationAngle: 0)
+                self.descriptionCaratImageView.transform = CGAffineTransform(rotationAngle: .pi)
+                
+                self.accessTextView.frame = CGRect(x: accessFrame.minX, y: accessFrame.minY, width: accessFrame.width, height: expandedHeight)
+                self.descriptionTextView.frame = CGRect(x: descriptionFrame.minX, y: descriptionFrame.minY, width: descriptionFrame.width, height: 0)
+                
+            } else {
+                self.accessCaratImageView.transform = CGAffineTransform(rotationAngle: .pi)
+                self.descriptionCaratImageView.transform = CGAffineTransform(rotationAngle: 0)
+                
+                self.accessTextView.frame = CGRect(x: accessFrame.minX, y: accessFrame.minY, width: accessFrame.width, height: 0)
+                self.descriptionTextView.frame = CGRect(x: descriptionFrame.minX, y: descriptionFrame.minY, width: descriptionFrame.width, height: expandedHeight)
+            }
+            
+            self.view.layoutIfNeeded()
+        }, completion: { _ in
+            if (self.accessExpanded) {
+                //NSLayoutConstraint.deactivate([self.hideAccessHeightConstraint, self.showDescriptionHeightConstraint])
+                NSLayoutConstraint.activate([self.showAccessHeightConstraint, self.hideDescriptionHeightConstraint])
+            } else {
+                //NSLayoutConstraint.deactivate([self.showAccessHeightConstraint, self.hideDescriptionHeightConstraint])
+                NSLayoutConstraint.activate([self.hideAccessHeightConstraint, self.showDescriptionHeightConstraint])
+            }
+        })
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -56,6 +56,24 @@ class CragListViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.transform = CGAffineTransform(translationX: 0, y: cell.frame.height / 2)
+        cell.alpha = 0
+        
+        UIView.animate(
+            withDuration: 0.5,
+            delay: 0.15 * Double(indexPath.row),
+            options: .curveEaseInOut,
+            animations: {
+                cell.transform = CGAffineTransform(translationX: 0, y: 0)
+                cell.alpha = 1
+            },
+            completion:{ Void in
+                if (indexPath.row == self.cragTableView.numberOfRows(inSection: indexPath.section) - 1) {
+                    self.view.backgroundColor = UIColor.clear
+                }
+        })
+    }
     
     // MARK - CoreData
     
