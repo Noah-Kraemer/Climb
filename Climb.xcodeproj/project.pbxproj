@@ -32,6 +32,7 @@
 		4FCC1FBC2160685E001B63ED /* sport.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBB2160685E001B63ED /* sport.png */; };
 		4FCC1FBE2160701C001B63ED /* tote.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBD2160701C001B63ED /* tote.jpg */; };
 		4FCC1FC0216072C8001B63ED /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBF216072C8001B63ED /* GradientView.swift */; };
+		4FE31B6521E96BA100B45723 /* DirectionalPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE31B6421E96BA100B45723 /* DirectionalPanGestureRecognizer.swift */; };
 		4FFA883021718E3500429F84 /* trad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FFA882F21718E3500429F84 /* trad.png */; };
 		4FFA883421719F8C00429F84 /* 3Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FFA883121719F8B00429F84 /* 3Star.png */; };
 		4FFA88392171A43500429F84 /* 2Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FFA88372171A43500429F84 /* 2Star.png */; };
@@ -106,6 +107,7 @@
 		4FCC1FBB2160685E001B63ED /* sport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sport.png; path = ../Icons/sport.png; sourceTree = "<group>"; };
 		4FCC1FBD2160701C001B63ED /* tote.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tote.jpg; sourceTree = "<group>"; };
 		4FCC1FBF216072C8001B63ED /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		4FE31B6421E96BA100B45723 /* DirectionalPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionalPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		4FFA882F21718E3500429F84 /* trad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trad.png; path = ../Icons/trad.png; sourceTree = "<group>"; };
 		4FFA883121719F8B00429F84 /* 3Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3Star.png; path = ../Icons/3Star.png; sourceTree = "<group>"; };
 		4FFA88372171A43500429F84 /* 2Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2Star.png; path = ../Icons/2Star.png; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 		4FCC1F8621605CC6001B63ED /* Climb */ = {
 			isa = PBXGroup;
 			children = (
+				4FE31B6321E96B8200B45723 /* Subclasses */,
 				D94FC6B321A1020300E0884F /* Transitions */,
 				4F5D5ACE2161DD47001D8A07 /* Storyboards */,
 				4F5D5ACB2161DD06001D8A07 /* ViewControllers */,
@@ -281,6 +284,14 @@
 				4FCC1F9121605CC8001B63ED /* Assets.xcassets */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		4FE31B6321E96B8200B45723 /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				4FE31B6421E96BA100B45723 /* DirectionalPanGestureRecognizer.swift */,
+			);
+			path = Subclasses;
 			sourceTree = "<group>";
 		};
 		4FFA8826216F490500429F84 /* Crags */ = {
@@ -516,6 +527,7 @@
 				D91535A021A2DDE200C90981 /* ShowClimbListTransition.swift in Sources */,
 				4FFA883C2171A47300429F84 /* MockClimbData.swift in Sources */,
 				D915359C21A2C88000C90981 /* DismissClimbListAnimationController.swift in Sources */,
+				4FE31B6521E96BA100B45723 /* DirectionalPanGestureRecognizer.swift in Sources */,
 				4F66DF332169821D0089AFE4 /* AnimatedLogoView.swift in Sources */,
 				4F66DF31216980A50089AFE4 /* SplashScreenViewController.swift in Sources */,
 				D94FC6B221A0DF7500E0884F /* MockCragData.swift in Sources */,

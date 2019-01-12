@@ -22,7 +22,7 @@ class DismissClimbListTransition: UIPercentDrivenInteractiveTransition {
     }
     
     private func prepareGestureRecognizer(in view: UIView) {
-        let gesture = UIPanGestureRecognizer(target: self, action: #selector(handleGesture(_:)))
+        let gesture = DirectionalPanGestureRecognizer(direction: .horizontal, target: self, action: #selector(handleGesture(_:)))
         view.addGestureRecognizer(gesture)
     }
     
