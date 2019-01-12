@@ -18,11 +18,15 @@ class ClimbListViewController: UITableViewController {
             tempClimb(name: "Rescision", style: "Sport", grade: "19"),
             tempClimb(name: "Heliosphere", style: "Sport", grade: "14")
         ]),
-        tempArea(name: "Celestial Wall", walkTime: "25m", climbs: [
+        tempArea(name: "Celestial Wall", walkTime: "25m", climbs: [/*
             tempClimb(name: "Idiot Wind", style: "Sport", grade: "21"),
             tempClimb(name: "Bombadil", style: "Sport", grade: "18"),
-            tempClimb(name: "Cucumber Castle", style: "Trad", grade: "23")
-        ])/*,
+            tempClimb(name: "Cucumber Castle", style: "Trad", grade: "23")*/
+        ]),
+        tempArea(name: "Coolum Cave", walkTime: "25m", climbs: []),
+        tempArea(name: "Ngungun", walkTime: "25m", climbs: []),
+        tempArea(name: "Redbank", walkTime: "25m", climbs: []),
+        tempArea(name: "Toohey Forest", walkTime: "25m", climbs: [])/*,
         tempArea(name: "Slider", walkTime: "15m", climbs: [
             tempClimb(name: <#T##String#>, style: <#T##String#>, grade: <#T##Int#>),
             tempClimb(name: <#T##String#>, style: <#T##String#>, grade: <#T##Int#>),
