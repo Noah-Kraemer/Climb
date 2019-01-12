@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Area" representedClassName="Area" syncable="YES" codeGenerationType="class">
+        <attribute name="hikeTime" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="climbs" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Climb" inverseName="area" inverseEntity="Climb" syncable="YES"/>
+        <relationship name="crag" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Crag" inverseName="area" inverseEntity="Crag" syncable="YES"/>
+    </entity>
     <entity name="Climb" representedClassName="Climb" syncable="YES" codeGenerationType="class">
         <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="grade" optional="YES" attributeType="String" syncable="YES"/>
@@ -9,6 +16,7 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="starRating" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="style" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="area" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Area" inverseName="climbs" inverseEntity="Area" syncable="YES"/>
     </entity>
     <entity name="Crag" representedClassName="Crag" syncable="YES" codeGenerationType="class">
         <attribute name="accessText" optional="YES" attributeType="String" syncable="YES"/>
@@ -19,9 +27,11 @@
         <attribute name="imageName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="weather" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="area" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Area" inverseName="crag" inverseEntity="Area" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Climb" positionX="-63" positionY="-18" width="128" height="165"/>
-        <element name="Crag" positionX="-63" positionY="45" width="128" height="165"/>
+        <element name="Climb" positionX="-63" positionY="-18" width="128" height="180"/>
+        <element name="Crag" positionX="-63" positionY="45" width="128" height="180"/>
+        <element name="Area" positionX="-63" positionY="72" width="128" height="120"/>
     </elements>
 </model>
