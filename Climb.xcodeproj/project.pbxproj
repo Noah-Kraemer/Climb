@@ -89,7 +89,7 @@
 		4F66DF382169F6030089AFE4 /* flinders.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flinders.jpg; sourceTree = "<group>"; };
 		4F66DF392169F6030089AFE4 /* kp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kp.jpg; sourceTree = "<group>"; };
 		4F66DF3B2169F6040089AFE4 /* frog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = frog.jpg; sourceTree = "<group>"; };
-		4F6FCCA621DDD45000724E52 /* carat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = carat.png; path = ../../../../Downloads/carat.png; sourceTree = "<group>"; };
+		4F6FCCA621DDD45000724E52 /* carat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carat.png; sourceTree = "<group>"; };
 		4FCC1F8421605CC6001B63ED /* Climb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Climb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCC1F8721605CC6001B63ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FCC1F8921605CC6001B63ED /* ClimbPageContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbPageContentController.swift; sourceTree = "<group>"; };
