@@ -33,6 +33,8 @@
 		4FCC1FBE2160701C001B63ED /* tote.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBD2160701C001B63ED /* tote.jpg */; };
 		4FCC1FC0216072C8001B63ED /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCC1FBF216072C8001B63ED /* GradientView.swift */; };
 		4FE31B6521E96BA100B45723 /* DirectionalPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE31B6421E96BA100B45723 /* DirectionalPanGestureRecognizer.swift */; };
+		4FF14FC12203DE5C00629A21 /* backIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FF14FC02203DE5C00629A21 /* backIcon.png */; };
+		4FF14FC32203DEA800629A21 /* backIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FF14FC22203DEA800629A21 /* backIcon2.png */; };
 		4FFA883021718E3500429F84 /* trad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FFA882F21718E3500429F84 /* trad.png */; };
 		4FFA883421719F8C00429F84 /* 3Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FFA883121719F8B00429F84 /* 3Star.png */; };
 		4FFA88392171A43500429F84 /* 2Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FFA88372171A43500429F84 /* 2Star.png */; };
@@ -108,6 +110,8 @@
 		4FCC1FBD2160701C001B63ED /* tote.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tote.jpg; sourceTree = "<group>"; };
 		4FCC1FBF216072C8001B63ED /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		4FE31B6421E96BA100B45723 /* DirectionalPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionalPanGestureRecognizer.swift; sourceTree = "<group>"; };
+		4FF14FC02203DE5C00629A21 /* backIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backIcon.png; path = ../../../../Downloads/backIcon.png; sourceTree = "<group>"; };
+		4FF14FC22203DEA800629A21 /* backIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backIcon2.png; path = ../../../../Downloads/backIcon2.png; sourceTree = "<group>"; };
 		4FFA882F21718E3500429F84 /* trad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = trad.png; path = ../Icons/trad.png; sourceTree = "<group>"; };
 		4FFA883121719F8B00429F84 /* 3Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3Star.png; path = ../Icons/3Star.png; sourceTree = "<group>"; };
 		4FFA88372171A43500429F84 /* 2Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2Star.png; path = ../Icons/2Star.png; sourceTree = "<group>"; };
@@ -334,6 +338,8 @@
 		4FFA882A216F496000429F84 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				4FF14FC22203DEA800629A21 /* backIcon2.png */,
+				4FF14FC02203DE5C00629A21 /* backIcon.png */,
 				4F6FCCA621DDD45000724E52 /* carat.png */,
 				D91535A521A394F900C90981 /* climbCountIcon.png */,
 				D915359521A2C2E500C90981 /* hikeIcon.png */,
@@ -492,7 +498,9 @@
 				4FCC1FBC2160685E001B63ED /* sport.png in Resources */,
 				4F5D5AE22164FB15001D8A07 /* overlay_tote.jpg in Resources */,
 				4F5D5AD22161FB72001D8A07 /* candlestick.jpg in Resources */,
+				4FF14FC12203DE5C00629A21 /* backIcon.png in Resources */,
 				4F6FCCA721DDD45000724E52 /* carat.png in Resources */,
+				4FF14FC32203DEA800629A21 /* backIcon2.png in Resources */,
 				4F66DF3C2169F6040089AFE4 /* flinders.jpg in Resources */,
 				4FFA88392171A43500429F84 /* 2Star.png in Resources */,
 			);

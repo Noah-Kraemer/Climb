@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class ClimbListViewController: UITableViewController {
+class ClimbListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var areas = [
         tempArea(name: "Slider", walkTime: "15m", climbs: [
@@ -60,6 +60,22 @@ class ClimbListViewController: UITableViewController {
     
     //MARK - UITableViewDelegate, UITableViewDatasource
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if (isArea(atIndexPath: indexPath)) {
+            return 100
+        } else {
+            return 50
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        var count = 0
+        for area in areas {
+            count += area.climbs.count + 1
+        }
+        return count
+    }
+    
     func isArea(atIndexPath indexPath: IndexPath) -> Bool {
         var itr = 0
         for area in areas {
@@ -108,7 +124,7 @@ class ClimbListViewController: UITableViewController {
             topConnection = ClimbListBulletView.Direction.none
         }
         
-        if (indexPath.row == tableView.numberOfRows(inSection: indexPath.section) - 1) {
+        if (indexPath.row == climbTableView.numberOfRows(inSection: indexPath.section) - 1) {
             bottomConnection = ClimbListBulletView.Direction.none
         }
 
@@ -142,23 +158,7 @@ class ClimbListViewController: UITableViewController {
                                    bottomConnection: bottomConnection!)
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if (isArea(atIndexPath: indexPath)) {
-            return 100
-        } else {
-            return 50
-        }
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        var count = 0
-        for area in areas {
-            count += area.climbs.count + 1
-        }
-        return count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (isArea(atIndexPath: indexPath)) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "ClimbTableViewAreaCell", for: indexPath) as! ClimbTableViewAreaCell
             let area = getAreaAt(indexPath: indexPath)!
